@@ -11,5 +11,6 @@ const learningPath = path.join(
 export function getLearningPath(): LearningLevel[] {
   if (!fs.existsSync(learningPath)) return [];
   const raw = fs.readFileSync(learningPath, "utf-8");
-  return JSON.parse(raw) as LearningLevel[];
+  const parsed = JSON.parse(raw);
+  return (parsed.levels ?? parsed) as LearningLevel[];
 }
