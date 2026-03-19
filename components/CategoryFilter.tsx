@@ -15,8 +15,8 @@ export default function CategoryFilter({
         onClick={() => onSelect(null)}
         className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
           active === null
-            ? "bg-blue-600 text-white"
-            : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+            ? "bg-[#6c5ce7] text-white"
+            : "bg-[#1c1f26] text-[#8b8e94] hover:brightness-125"
         }`}
       >
         All
@@ -27,8 +27,8 @@ export default function CategoryFilter({
           onClick={() => onSelect(cat)}
           className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
             active === cat
-              ? "bg-blue-600 text-white"
-              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              ? "bg-[#6c5ce7] text-white"
+              : "bg-[#1c1f26] text-[#8b8e94] hover:brightness-125"
           }`}
         >
           {cat}

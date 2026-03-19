@@ -46,11 +46,11 @@ export default function LearnClient({ levels }: LearnClientProps) {
     <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       {/* Header */}
       <div className="mb-10">
-        <h1 className="text-3xl font-bold text-gray-900">Learning Path</h1>
-        <p className="mt-2 text-gray-600">
+        <h1 className="text-3xl font-bold text-white">Learning Path</h1>
+        <p className="mt-2 text-[#8b8e94]">
           A structured path from web basics to professional development practices.
         </p>
-        <p className="mt-1 text-sm text-blue-600 font-medium">
+        <p className="mt-1 text-sm text-[#6c5ce7] font-medium">
           Level {currentLevelNum} of {totalLevels}
         </p>
       </div>

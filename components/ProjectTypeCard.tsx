@@ -11,14 +11,14 @@ export default function ProjectTypeCard({
   toolsMap,
 }: ProjectTypeCardProps) {
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-5">
+    <div className="bg-[#1c1f26] border border-[#2a2e37] rounded-xl p-6 flex flex-col gap-5">
       <div>
-        <h2 className="text-xl font-bold text-gray-900">{starter.type}</h2>
-        <p className="mt-2 text-gray-600">{starter.description}</p>
+        <h2 className="text-xl font-bold text-white">{starter.type}</h2>
+        <p className="mt-2 text-[#8b8e94]">{starter.description}</p>
       </div>
 
       <div>
-        <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-2">
+        <h3 className="text-sm font-semibold text-[#e4e6eb] uppercase tracking-wide mb-2">
           Recommended Tools
         </h3>
         <div className="flex flex-wrap gap-2">
@@ -28,7 +28,7 @@ export default function ProjectTypeCard({
               <Link
                 key={slug}
                 href={`/toolkit/${slug}`}
-                className="text-sm px-3 py-1 rounded-full bg-gray-100 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                className="text-sm px-3 py-1 rounded-full bg-[#2a2e37] text-[#8b8e94] hover:bg-[#6c5ce7]/20 hover:text-[#6c5ce7] transition-colors"
               >
                 {name}
               </Link>
@@ -37,11 +37,11 @@ export default function ProjectTypeCard({
         </div>
       </div>
 
-      <div className="bg-gray-50 border border-gray-100 rounded-lg p-4">
-        <h3 className="text-sm font-semibold text-gray-700 mb-1">
+      <div className="bg-[#0e1217] border border-[#2a2e37] rounded-lg p-4">
+        <h3 className="text-sm font-semibold text-[#e4e6eb] mb-1">
           Why this stack
         </h3>
-        <p className="text-sm text-gray-600">{starter.why}</p>
+        <p className="text-sm text-[#8b8e94]">{starter.why}</p>
       </div>
     </div>
   );

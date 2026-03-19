@@ -17,28 +17,28 @@ function getRelativeDate(createdAt: string): string {
 
 export default function TrendingRepoCard({ repo }: TrendingRepoCardProps) {
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow duration-200">
+    <div className="bg-[#1c1f26] border border-[#2a2e37] rounded-xl p-5 hover:brightness-125 transition-all duration-200">
       <a
         href={repo.html_url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-600 hover:text-blue-800 font-semibold text-lg"
+        className="text-[#6c5ce7] hover:text-[#7c6ff7] font-semibold text-lg"
       >
         {repo.full_name}
       </a>
-      <p className="text-gray-600 mt-2 text-sm">
+      <p className="text-[#8b8e94] mt-2 text-sm">
         {repo.description ?? "No description"}
       </p>
       <div className="flex items-center gap-3 mt-4 flex-wrap">
-        <span className="text-sm text-gray-700">
+        <span className="text-sm text-[#8b8e94]">
           ⭐ {repo.stargazers_count.toLocaleString()}
         </span>
         {repo.language && (
-          <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full border border-gray-200">
+          <span className="text-xs bg-[#2a2e37] text-[#8b8e94] px-2 py-1 rounded-full border border-[#2a2e37]">
             {repo.language}
           </span>
         )}
-        <span className="text-xs text-gray-500 ml-auto">
+        <span className="text-xs text-[#8b8e94] ml-auto">
           Created {getRelativeDate(repo.created_at)}
         </span>
       </div>

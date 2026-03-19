@@ -33,22 +33,22 @@ export default function FeedPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900">What&apos;s New</h1>
-        <p className="text-gray-500 mt-2">
+        <h1 className="text-3xl font-bold text-white">What&apos;s New</h1>
+        <p className="text-[#8b8e94] mt-2">
           Trending developer tools from this week
         </p>
       </header>
 
       {loading && (
-        <div className="flex items-center gap-3 text-gray-500 animate-pulse">
-          <div className="w-4 h-4 rounded-full bg-gray-300 animate-bounce" />
+        <div className="flex items-center gap-3 text-[#8b8e94] animate-pulse">
+          <div className="w-4 h-4 rounded-full bg-[#2a2e37] animate-bounce" />
           <span>Loading trending repos...</span>
         </div>
       )}
 
       {error && !loading && (
-        <div className="bg-red-50 border border-red-200 rounded-xl p-5 text-center">
-          <p className="text-red-600 mb-3">{error}</p>
+        <div className="bg-red-900/20 border border-red-800 rounded-xl p-5 text-center">
+          <p className="text-red-400 mb-3">{error}</p>
           <button
             onClick={fetchRepos}
             className="text-sm bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"

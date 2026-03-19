@@ -37,7 +37,7 @@ export default function ToolkitGrid({ tools, categories }: ToolkitGridProps) {
         active={activeCategory}
         onSelect={setActiveCategory}
       />
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-[#8b8e94]">
         Showing {filtered.length} of {tools.length} tools
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

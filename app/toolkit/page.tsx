@@ -8,8 +8,8 @@ export default function ToolkitPage() {
   return (
     <main className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900">My Toolkit</h1>
-        <p className="text-gray-500 mt-2">
+        <h1 className="text-3xl font-bold text-white">My Toolkit</h1>
+        <p className="text-[#8b8e94] mt-2">
           Every tool in your development stack, explained
         </p>
       </div>

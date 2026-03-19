@@ -14,8 +14,8 @@ export default function StarterPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
       <div className="mb-10">
-        <h1 className="text-3xl font-bold text-gray-900">Project Starter</h1>
-        <p className="mt-2 text-gray-600">
+        <h1 className="text-3xl font-bold text-white">Project Starter</h1>
+        <p className="mt-2 text-[#8b8e94]">
           Pick a project type to see which tools you need
         </p>
       </div>
