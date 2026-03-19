@@ -16,28 +16,28 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-b border-white/[0.06] bg-[#0e1217] sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <nav className="sticky top-0 z-50 bg-[#0e1217]/80 backdrop-blur-xl border-b border-white/[0.04]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
             href="/"
-            className="text-xl font-bold text-white tracking-tighter"
+            className="text-lg font-bold text-white tracking-tighter"
             onClick={() => setIsOpen(false)}
           >
-            DevToolkit
+            <span className="text-emerald-400">Dev</span>Toolkit
           </Link>
 
-          {/* Desktop nav links — hidden on mobile */}
-          <div className="hidden sm:flex gap-1 sm:gap-4">
+          {/* Desktop nav */}
+          <div className="hidden sm:flex items-center bg-white/[0.03] rounded-xl p-1 ring-1 ring-white/[0.04]">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 active:scale-[0.98] ${
+                className={`px-4 py-1.5 rounded-lg text-[13px] font-medium transition-all duration-300 active:scale-[0.97] ${
                   pathname.startsWith(link.href)
                     ? "bg-emerald-500/15 text-emerald-400"
-                    : "text-[#8b8e94] hover:text-white hover:bg-[#1c1f26]"
+                    : "text-[#8b8e94] hover:text-white"
                 }`}
               >
                 {link.label}
@@ -45,25 +45,25 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Hamburger button — visible on mobile only */}
+          {/* Hamburger */}
           <button
-            className="sm:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-md hover:bg-[#1c1f26] transition-colors duration-200"
+            className="sm:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-xl hover:bg-white/[0.04] transition-colors duration-200"
             onClick={() => setIsOpen((prev) => !prev)}
             aria-label="Toggle menu"
             aria-expanded={isOpen}
           >
             <span
-              className={`block w-5 h-0.5 bg-[#e4e6eb] transition-transform duration-200 ${
+              className={`block w-5 h-0.5 bg-[#e4e6eb] transition-transform duration-300 ${
                 isOpen ? "translate-y-2 rotate-45" : ""
               }`}
             />
             <span
-              className={`block w-5 h-0.5 bg-[#e4e6eb] transition-opacity duration-200 ${
+              className={`block w-5 h-0.5 bg-[#e4e6eb] transition-opacity duration-300 ${
                 isOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`block w-5 h-0.5 bg-[#e4e6eb] transition-transform duration-200 ${
+              className={`block w-5 h-0.5 bg-[#e4e6eb] transition-transform duration-300 ${
                 isOpen ? "-translate-y-2 -rotate-45" : ""
               }`}
             />
@@ -71,19 +71,19 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile dropdown — full-width panel below navbar */}
+      {/* Mobile menu */}
       {isOpen && (
-        <div className="sm:hidden border-t border-white/[0.06] bg-[#0e1217] w-full">
+        <div className="sm:hidden border-t border-white/[0.04] bg-[#0e1217]/95 backdrop-blur-xl">
           <div className="flex flex-col px-4 py-3 gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`px-3 py-3 rounded-md text-sm font-medium transition-all duration-200 ${
+                className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                   pathname.startsWith(link.href)
                     ? "bg-emerald-500/15 text-emerald-400"
-                    : "text-[#8b8e94] hover:text-white hover:bg-[#1c1f26]"
+                    : "text-[#8b8e94] hover:text-white hover:bg-white/[0.04]"
                 }`}
               >
                 {link.label}

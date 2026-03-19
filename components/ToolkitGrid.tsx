@@ -30,27 +30,41 @@ export default function ToolkitGrid({ tools, categories }: ToolkitGridProps) {
   });
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-8">
       <SearchBar value={searchQuery} onChange={setSearchQuery} />
-      <CategoryFilter
-        categories={categories}
-        active={activeCategory}
-        onSelect={setActiveCategory}
-      />
-      <p className="text-sm text-[#8b8e94] font-medium">
-        Showing {filtered.length} of {tools.length} tools
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filtered.map((tool, index) => (
-          <div
-            key={tool.slug}
-            className="animate-fade-in"
-            style={{ animationDelay: `${index * 50}ms` }}
-          >
-            <ToolCard tool={tool} />
-          </div>
-        ))}
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <CategoryFilter
+          categories={categories}
+          active={activeCategory}
+          onSelect={setActiveCategory}
+        />
+        <span className="text-xs text-[#555] font-medium tabular-nums">
+          {filtered.length} of {tools.length} tools
+        </span>
       </div>
+      {filtered.length === 0 ? (
+        <div className="text-center py-20">
+          <p className="text-[#555] text-sm">No tools match your search</p>
+          <button
+            onClick={() => { setSearchQuery(""); setActiveCategory(null); }}
+            className="mt-3 text-xs text-emerald-400 hover:text-emerald-300 transition-colors"
+          >
+            Clear filters
+          </button>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {filtered.map((tool, index) => (
+            <div
+              key={tool.slug}
+              className="animate-fade-in"
+              style={{ animationDelay: `${index * 40}ms` }}
+            >
+              <ToolCard tool={tool} />
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
