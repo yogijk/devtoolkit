@@ -1,0 +1,13 @@
+{
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "category": "Dev Tools",
+  "icon": "🤖",
+  "analogy": "Like hiring a team of specialist workers — each one knows how to do one job really well, and a manager coordinates them to get the whole project done.",
+  "whatItDoes": "Lets you build custom AI agents that can work independently on tasks. Instead of one AI doing everything, you can create multiple agents — each with specific tools and instructions — that work together. Think of it as giving Claude Code the ability to send out mini versions of itself to handle different parts of a job.",
+  "whyYouUseIt": "Claude Code already uses sub-agents behind the scenes — that's how it builds your projects so fast (like DevToolkit, where it dispatched separate agents to build each page in parallel). If you want to build your own AI-powered tools for clients, this SDK is how you'd do it.",
+  "alternatives": ["LangChain", "CrewAI", "AutoGen", "OpenAI Agents SDK"],
+  "whenToSwap": "If a client specifically wants OpenAI instead of Claude, use OpenAI Agents SDK. If you need a framework with lots of pre-built integrations and community examples, LangChain has a bigger ecosystem. For simple single-agent tasks, you don't need an SDK at all — just the regular Claude API.",
+  "learnMore": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-agent-sdk",
+  "level": 4
+}
