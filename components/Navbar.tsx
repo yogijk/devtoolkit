@@ -9,6 +9,9 @@ const links = [
   { href: "/starter", label: "Project Starter" },
   { href: "/learn", label: "Learning Path" },
   { href: "/feed", label: "What's New" },
+  { href: "/skills", label: "Skills Hub" },
+  { href: "/agents", label: "Agents Guide" },
+  { href: "/setup", label: "Project Setup" },
 ];
 
 export default function Navbar() {
@@ -29,7 +32,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden sm:flex items-center bg-white/[0.03] rounded-xl p-1 ring-1 ring-white/[0.04]">
+          <div className="hidden sm:flex items-center bg-white/[0.03] rounded-xl p-1 ring-1 ring-white/[0.04] overflow-x-auto scrollbar-hide">
             {links.map((link) => (
               <Link
                 key={link.href}
