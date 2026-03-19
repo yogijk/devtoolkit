@@ -1,0 +1,12 @@
+{
+  "slug": "receiving-code-review",
+  "name": "Review",
+  "icon": "📥",
+  "category": "Review",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Handles incoming code review feedback with technical rigor. Verifies suggestions before implementing them and doesn't blindly agree — ensures each change is warranted.",
+  "whenToUse": "When receiving review feedback, before implementing suggestions.",
+  "exampleUse": "Review feedback on DevToolkit spec led to fixing GitHub API query syntax.",
+  "pairsWellWith": ["requesting-code-review", "systematic-debugging"]
+}

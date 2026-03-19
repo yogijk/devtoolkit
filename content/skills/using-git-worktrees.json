@@ -1,0 +1,12 @@
+{
+  "slug": "using-git-worktrees",
+  "name": "Deployment",
+  "icon": "🌲",
+  "category": "Deployment",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Creates isolated git worktrees for feature work. Keeps the current workspace untouched while working on new features in a separate copy of the repository.",
+  "whenToUse": "When starting feature work that needs isolation from the current workspace.",
+  "exampleUse": "Useful for working on DevToolkit Phase 2 without affecting the live MVP.",
+  "pairsWellWith": ["subagent-driven-development", "finishing-branch"]
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "dispatching-parallel-agents",
+  "name": "Deployment",
+  "icon": "⚡",
+  "category": "Deployment",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Launches 2 or more independent tasks as parallel subagents. Each works on its own files without conflicts. Saves wall-clock time by doing multiple things simultaneously.",
+  "whenToUse": "When facing independent tasks that don't share state or have sequential dependencies.",
+  "exampleUse": "DevToolkit Tasks 2, 3, and 4 ran in parallel (types, tool content, learning path).",
+  "pairsWellWith": ["subagent-driven-development", "writing-plans"]
+}

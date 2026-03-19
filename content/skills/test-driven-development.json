@@ -1,0 +1,12 @@
+{
+  "slug": "test-driven-development",
+  "name": "Code Quality",
+  "icon": "🧪",
+  "category": "Code Quality",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Enforces TDD workflow — write failing test first, then implement minimal code to pass, then refactor. Ensures every feature has tests before implementation so regressions are caught early.",
+  "whenToUse": "When implementing any feature or bugfix.",
+  "exampleUse": "Superpowers auto-invokes this when building features.",
+  "pairsWellWith": ["verification-before-completion", "systematic-debugging"]
+}

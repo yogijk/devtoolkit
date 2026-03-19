@@ -1,0 +1,12 @@
+{
+  "slug": "minimalist",
+  "name": "Frontend Design",
+  "icon": "📐",
+  "category": "Frontend Design",
+  "command": "/minimalist",
+  "source": "taste-skill (GitHub)",
+  "whatItDoes": "Creates clean editorial interfaces with a warm monochrome palette, typographic contrast, flat bento grids, and muted pastels. No gradients or heavy shadows — pure structure and whitespace.",
+  "whenToUse": "When user wants a clean Notion-like or editorial style.",
+  "exampleUse": "Good for internal tools and documentation sites.",
+  "pairsWellWith": ["taste", "full-output"]
+}

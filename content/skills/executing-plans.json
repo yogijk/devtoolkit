@@ -1,0 +1,12 @@
+{
+  "slug": "executing-plans",
+  "name": "Workflow",
+  "icon": "⚡",
+  "category": "Workflow",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Executes implementation plans task by task with review checkpoints. Tracks progress, verifies each step, and commits incrementally to keep work organized and reversible.",
+  "whenToUse": "When you have a written plan and want to execute it in a parallel session.",
+  "exampleUse": "Alternative to subagent-driven approach for plan execution.",
+  "pairsWellWith": ["writing-plans", "subagent-driven-development"]
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "verification-before-completion",
+  "name": "Code Quality",
+  "icon": "✅",
+  "category": "Code Quality",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Requires running verification commands and confirming output before claiming work is complete. Prevents false success claims by demanding evidence before assertions.",
+  "whenToUse": "Auto-invoked before committing or creating PRs — ensures evidence before assertions.",
+  "exampleUse": "After each DevToolkit task, npm run build was verified before marking done.",
+  "pairsWellWith": ["test-driven-development", "requesting-code-review"]
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "requesting-code-review",
+  "name": "Review",
+  "icon": "📤",
+  "category": "Review",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Requests structured code review of completed work. Checks implementation against requirements, identifies issues, and ensures quality before the work is considered done.",
+  "whenToUse": "When completing tasks or before merging to verify work meets requirements.",
+  "exampleUse": "Used after each DevToolkit task for spec compliance and code quality review.",
+  "pairsWellWith": ["receiving-code-review", "verification-before-completion"]
+}

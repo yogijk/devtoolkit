@@ -1,0 +1,12 @@
+{
+  "slug": "finishing-branch",
+  "name": "Workflow",
+  "icon": "🏁",
+  "category": "Workflow",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Guides completion of development work by presenting structured options for merge, PR, or cleanup. Ensures nothing is forgotten before integrating work into the main branch.",
+  "whenToUse": "When implementation is complete and all tests pass.",
+  "exampleUse": "Used after DevToolkit MVP was complete to push and deploy.",
+  "pairsWellWith": ["verification-before-completion", "requesting-code-review"]
+}

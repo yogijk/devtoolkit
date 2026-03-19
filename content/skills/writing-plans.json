@@ -1,0 +1,12 @@
+{
+  "slug": "writing-plans",
+  "name": "Workflow",
+  "icon": "📝",
+  "category": "Workflow",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Creates comprehensive implementation plans with exact file paths, complete code snippets, test commands, and commit messages. Breaks work into bite-sized tasks with clear success criteria.",
+  "whenToUse": "After brainstorming produces a spec, before starting implementation.",
+  "exampleUse": "DevToolkit's 14-task plan was created with this, covering every file and step.",
+  "pairsWellWith": ["brainstorming", "executing-plans"]
+}

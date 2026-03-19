@@ -1,0 +1,12 @@
+{
+  "slug": "soft-ui",
+  "name": "Frontend Design",
+  "icon": "✨",
+  "category": "Frontend Design",
+  "command": "/soft-ui",
+  "source": "taste-skill (GitHub)",
+  "whatItDoes": "Applies a luxury agency aesthetic with double-bezel card architecture, spring animations, massive whitespace, and custom cubic-bezier transitions. Produces interfaces that feel like high-end agency work.",
+  "whenToUse": "When the user wants a premium or luxury look.",
+  "exampleUse": "Available for client projects that need a $150k agency feel.",
+  "pairsWellWith": ["taste", "full-output"]
+}

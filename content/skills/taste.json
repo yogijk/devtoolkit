@@ -1,0 +1,12 @@
+{
+  "slug": "taste",
+  "name": "Frontend Design",
+  "icon": "🎨",
+  "category": "Frontend Design",
+  "command": "/taste",
+  "source": "taste-skill (GitHub)",
+  "whatItDoes": "Applies premium design rules for typography, colors, layout, and motion. Bans Inter font, pure black, and AI purple. Enforces a curated design system that produces distinctive, high-quality interfaces.",
+  "whenToUse": "When building any new UI component or page.",
+  "exampleUse": "Used on DevToolkit to swap Inter for Geist, add emerald accents, and introduce staggered animations across the homepage.",
+  "pairsWellWith": ["redesign", "full-output"]
+}

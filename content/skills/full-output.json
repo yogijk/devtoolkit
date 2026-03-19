@@ -1,0 +1,12 @@
+{
+  "slug": "full-output",
+  "name": "Code Quality",
+  "icon": "📋",
+  "category": "Code Quality",
+  "command": "/full-output",
+  "source": "taste-skill (GitHub)",
+  "whatItDoes": "Enforces complete code generation. Bans placeholder comments like // TODO, // rest of code, and structural shortcuts. Forces complete deliverables so nothing is left partially implemented.",
+  "whenToUse": "When generating large amounts of code to prevent AI from truncating or using placeholders.",
+  "exampleUse": "Used during DevToolkit build to ensure all 15 tool JSON files had complete content.",
+  "pairsWellWith": ["taste", "writing-plans"]
+}

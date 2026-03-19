@@ -1,0 +1,12 @@
+{
+  "slug": "systematic-debugging",
+  "name": "Debugging",
+  "icon": "🔍",
+  "category": "Debugging",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Structured approach to finding and fixing bugs. Investigates root causes before proposing fixes, avoids guessing, and documents findings so the same bug isn't reintroduced.",
+  "whenToUse": "When encountering any bug, test failure, or unexpected behavior.",
+  "exampleUse": "Would be auto-invoked if a build error occurred during DevToolkit development.",
+  "pairsWellWith": ["test-driven-development", "verification-before-completion"]
+}

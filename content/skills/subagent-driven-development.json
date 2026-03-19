@@ -1,0 +1,12 @@
+{
+  "slug": "subagent-driven-development",
+  "name": "Deployment",
+  "icon": "🤖",
+  "category": "Deployment",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Dispatches a fresh subagent per task with two-stage review (spec compliance then code quality). Each agent gets isolated context for focused work, preventing cross-task contamination.",
+  "whenToUse": "When executing implementation plans with independent tasks.",
+  "exampleUse": "DevToolkit was built this way — 14 tasks dispatched as subagents with parallel batches.",
+  "pairsWellWith": ["writing-plans", "dispatching-parallel-agents"]
+}

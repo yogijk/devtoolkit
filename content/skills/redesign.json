@@ -1,0 +1,12 @@
+{
+  "slug": "redesign",
+  "name": "Frontend Design",
+  "icon": "🔄",
+  "category": "Frontend Design",
+  "command": "/redesign",
+  "source": "taste-skill (GitHub)",
+  "whatItDoes": "Audits existing UI and applies targeted upgrades. Scans for generic patterns, fixes typography, colors, and hover states without rewriting everything from scratch.",
+  "whenToUse": "When improving an existing app's UI without rewriting from scratch.",
+  "exampleUse": "Used to audit DevToolkit's toolkit page and upgrade cards with glow effects and refined borders.",
+  "pairsWellWith": ["taste", "full-output"]
+}

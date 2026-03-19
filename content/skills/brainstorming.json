@@ -1,0 +1,12 @@
+{
+  "slug": "brainstorming",
+  "name": "Workflow",
+  "icon": "💡",
+  "category": "Workflow",
+  "command": "(superpowers auto)",
+  "source": "superpowers",
+  "whatItDoes": "Explores ideas through collaborative dialogue before implementation. Asks questions one at a time, proposes 2-3 approaches with tradeoffs, and presents a design for approval before any code is written.",
+  "whenToUse": "Before any creative work — creating features, building components, modifying behavior.",
+  "exampleUse": "DevToolkit design was brainstormed through multiple choice questions before any code was written.",
+  "pairsWellWith": ["writing-plans", "executing-plans"]
+}
