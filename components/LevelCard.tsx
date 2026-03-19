@@ -43,11 +43,13 @@ export default function LevelCard({ level, progress, onToggle }: LevelCardProps)
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-6">
       {/* Header */}
-      <div className="flex items-center justify-between gap-3 mb-3">
-        <h2 className="text-xl font-bold text-gray-900">
+      <div className="flex items-start justify-between gap-3 mb-3">
+        <h2 className="text-xl font-bold text-gray-900 min-w-0">
           Level {level.level}: {level.title}
         </h2>
-        <StatusBadge status={level.status} />
+        <div className="flex-shrink-0 pt-0.5">
+          <StatusBadge status={level.status} />
+        </div>
       </div>
 
       <p className="text-gray-600 text-sm mb-4">{level.description}</p>
