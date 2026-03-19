@@ -1,0 +1,13 @@
+{
+  "slug": "taste-skill",
+  "name": "Taste Skill",
+  "category": "Dev Tools",
+  "icon": "🎨",
+  "analogy": "Like hiring a design director who sits behind every AI coder — they won't let anything generic, boring, or sloppy get shipped.",
+  "whatItDoes": "A set of design rule files you drop into any project. When AI generates frontend code, it follows these rules to create premium-looking interfaces instead of generic templates. Covers typography, colors, layout, animations, and anti-patterns.",
+  "whyYouUseIt": "Your projects like DevToolkit and SafetyIQ use AI to generate UI code. Without taste-skill, the AI defaults to boring Inter font, centered layouts, and purple gradients. With it, you get Geist fonts, emerald accents, staggered animations, and polished hover states automatically.",
+  "alternatives": ["v0.dev", "Custom CLAUDE.md rules", "shadcn/ui defaults"],
+  "whenToSwap": "If you want a completely custom design system with a dedicated designer, you wouldn't need this. But for solo developers using AI to build UIs, this is the best way to get consistent quality.",
+  "learnMore": "https://github.com/Leonxlnx/taste-skill",
+  "level": 3
+}
