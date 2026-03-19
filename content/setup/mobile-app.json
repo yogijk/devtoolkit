@@ -1,0 +1,16 @@
+{
+  "slug": "mobile-app",
+  "type": "Mobile App",
+  "description": "Cross-platform mobile application using React Native and Expo. Build once, run on iOS and Android.",
+  "tools": ["react", "typescript", "nodejs", "github"],
+  "skills": ["taste", "full-output", "test-driven-development"],
+  "agentStrategy": {
+    "primary": "sonnet",
+    "useOpusFor": "Navigation architecture, platform-specific code, performance optimization",
+    "useHaikuFor": "Simple screens, style constants",
+    "pattern": "sequential-review",
+    "tip": "Mobile needs careful testing on both iOS and Android. Build one platform first, then adapt."
+  },
+  "complexity": "High",
+  "estimatedTasks": "20-30"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "automation-scripts",
+  "type": "Automation & Scripts",
+  "description": "Node.js scripts for data processing, cron jobs, or workflow automation. No UI, just reliable execution.",
+  "tools": ["nodejs", "typescript", "npm", "github"],
+  "skills": ["full-output", "test-driven-development", "systematic-debugging"],
+  "agentStrategy": {
+    "primary": "sonnet",
+    "useOpusFor": "Complex data transformations, error recovery logic",
+    "useHaikuFor": "Simple file operations, config parsing",
+    "pattern": "solo",
+    "tip": "Scripts are self-contained — solo agent per script works well. Write error handling from day one; a failing silent script is worse than a crash."
+  },
+  "complexity": "Low",
+  "estimatedTasks": "3-8"
+}

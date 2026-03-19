@@ -1,0 +1,16 @@
+{
+  "slug": "ai-powered-app",
+  "type": "AI-Powered App",
+  "description": "Application with Claude API integration — chatbots, content generators, AI advisors. Prompt engineering and agent architecture included.",
+  "tools": ["nextjs", "typescript", "tailwindcss", "nodejs", "vercel", "github", "claude-agent-sdk"],
+  "skills": ["taste", "full-output", "test-driven-development", "brainstorming"],
+  "agentStrategy": {
+    "primary": "opus",
+    "useOpusFor": "AI integration, prompt engineering, agent architecture",
+    "useHaikuFor": "UI components, static pages",
+    "pattern": "sequential-review",
+    "tip": "Prompt engineering is where quality matters most — don't cut corners with cheaper models here. Get the AI core right first, then build UI around it."
+  },
+  "complexity": "High",
+  "estimatedTasks": "15-25"
+}

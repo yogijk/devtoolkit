@@ -1,0 +1,16 @@
+{
+  "slug": "static-website",
+  "type": "Static Website",
+  "description": "Portfolio, landing page, or informational site — no login, no database. Deploy to Vercel in minutes.",
+  "tools": ["nextjs", "typescript", "tailwindcss", "vercel", "github"],
+  "skills": ["taste", "full-output"],
+  "agentStrategy": {
+    "primary": "sonnet",
+    "useOpusFor": "Design decisions, content strategy",
+    "useHaikuFor": "Page scaffolding, repetitive components",
+    "pattern": "parallel",
+    "tip": "Pages are independent — run them in parallel. Each page is a separate agent task. Review design once with Opus before building all pages."
+  },
+  "complexity": "Low",
+  "estimatedTasks": "5-10"
+}

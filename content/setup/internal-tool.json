@@ -1,0 +1,16 @@
+{
+  "slug": "internal-tool",
+  "type": "Internal Tool",
+  "description": "Company dashboard or data viewer for internal use — like an HSE records viewer. Assumes trusted users, simpler auth.",
+  "tools": ["nextjs", "typescript", "tailwindcss", "postgresql", "prisma", "vercel", "railway", "github"],
+  "skills": ["taste", "full-output", "test-driven-development"],
+  "agentStrategy": {
+    "primary": "sonnet",
+    "useOpusFor": "Data modeling, complex queries",
+    "useHaikuFor": "Simple CRUD pages, config files",
+    "pattern": "parallel",
+    "tip": "Internal tools can move fast — skip heavy auth flows. Focus Opus time on data modeling. CRUD pages are mechanical and safe to parallelize."
+  },
+  "complexity": "Medium",
+  "estimatedTasks": "10-15"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "api-backend",
+  "type": "API Backend",
+  "description": "REST or GraphQL API with database — no frontend, just endpoints. Designed for reliability and clean error handling.",
+  "tools": ["nodejs", "typescript", "postgresql", "prisma", "railway", "github"],
+  "skills": ["full-output", "test-driven-development", "systematic-debugging"],
+  "agentStrategy": {
+    "primary": "sonnet",
+    "useOpusFor": "API architecture, auth middleware, error handling design",
+    "useHaikuFor": "Route boilerplate, simple CRUD endpoints",
+    "pattern": "sequential-review",
+    "tip": "Write tests before routes. It forces you to think about the API contract first. Use sequential-review so each endpoint is solid before building the next."
+  },
+  "complexity": "Medium",
+  "estimatedTasks": "10-20"
+}

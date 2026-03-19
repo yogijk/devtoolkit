@@ -1,0 +1,90 @@
+{
+  "modelStrategy": [
+    {
+      "taskType": "Scaffolding, file creation, JSON content",
+      "model": "Haiku",
+      "why": "Mechanical work — copy templates, create files, write structured data",
+      "cost": "Lowest"
+    },
+    {
+      "taskType": "Simple search, file reading, basic edits",
+      "model": "Haiku",
+      "why": "Fast lookups that don't need reasoning",
+      "cost": "Lowest"
+    },
+    {
+      "taskType": "Component building, page implementation",
+      "model": "Sonnet",
+      "why": "Good balance of speed and quality for most coding tasks",
+      "cost": "Medium"
+    },
+    {
+      "taskType": "Multi-file coordination, integration",
+      "model": "Sonnet",
+      "why": "Handles complexity without the cost of Opus",
+      "cost": "Medium"
+    },
+    {
+      "taskType": "Architecture, debugging, complex reviews",
+      "model": "Opus",
+      "why": "Needs deep judgment, multi-step reasoning, and nuanced understanding",
+      "cost": "Highest"
+    },
+    {
+      "taskType": "Design decisions, spec writing",
+      "model": "Opus",
+      "why": "Creative and strategic thinking — where quality matters most",
+      "cost": "Highest"
+    }
+  ],
+  "agentPatterns": [
+    {
+      "name": "Solo Agent",
+      "description": "One task, one agent. The simplest pattern — dispatch a single agent to handle an isolated piece of work.",
+      "whenToUse": "For simple, self-contained tasks that don't interact with other work. Scripts, config files, single components.",
+      "diagram": "Task → Agent → Done",
+      "example": "DevToolkit Task 12 (mobile polish) ran as a solo agent — it touched multiple files but was one cohesive task."
+    },
+    {
+      "name": "Parallel Dispatch",
+      "description": "Multiple independent tasks running simultaneously. Each agent works on its own files without conflicts.",
+      "whenToUse": "When you have 2+ tasks that don't share files or state. Pages, content files, independent components.",
+      "diagram": "Task A → Agent A ──┐\nTask B → Agent B ──┼→ All Done\nTask C → Agent C ──┘",
+      "example": "DevToolkit Tasks 2, 3, 4 ran in parallel — types, tool JSON files, and learning path content. No conflicts because they touched different directories."
+    },
+    {
+      "name": "Sequential with Review",
+      "description": "Implement → spec review → quality review. Each task goes through two review gates before moving on.",
+      "whenToUse": "For quality-critical work where mistakes are costly. Auth systems, payment integration, data migrations.",
+      "diagram": "Implement → Spec Review → Quality Review → Next Task",
+      "example": "Each DevToolkit page task was implemented by Sonnet, then reviewed by Opus for spec compliance and code quality."
+    },
+    {
+      "name": "Escalation",
+      "description": "Start with a cheaper model. If it gets stuck or produces poor results, re-dispatch with a more capable model.",
+      "whenToUse": "When you're unsure about task complexity. Start cheap, upgrade only if needed.",
+      "diagram": "Task → Haiku/Sonnet → Blocked? → Re-dispatch with Opus → Done",
+      "example": "If a Sonnet agent reported BLOCKED on a complex debugging task, you'd re-dispatch the same task with Opus for deeper reasoning."
+    }
+  ],
+  "tokenEfficiency": [
+    "Match model to task complexity — don't use Opus to create JSON files when Haiku does it perfectly",
+    "Never send full conversation history to subagents — craft precise, focused prompts with only the context they need",
+    "Parallelize independent tasks to save wall-clock time — 3 parallel agents finish faster than 3 sequential ones",
+    "Fresh agent per task prevents context pollution — each agent starts clean without irrelevant prior context",
+    "Use the cheapest model that handles the task well — not just 'handles' but 'handles well'. Quality still matters."
+  ],
+  "realExample": {
+    "title": "How DevToolkit Was Built",
+    "description": "14 tasks completed in one session using subagent-driven development with parallel batches.",
+    "batches": [
+      { "name": "Batch 1", "tasks": "Task 1: Project scaffolding", "model": "Sonnet", "parallel": false },
+      { "name": "Batch 2", "tasks": "Tasks 2, 3, 4: Types, tool content, learning path", "model": "Sonnet", "parallel": true },
+      { "name": "Batch 3", "tasks": "Tasks 5, 6: Navbar, home page", "model": "Sonnet", "parallel": true },
+      { "name": "Batch 4", "tasks": "Tasks 7, 8, 9: Toolkit, detail, starter pages", "model": "Sonnet", "parallel": true },
+      { "name": "Batch 5", "tasks": "Tasks 10, 11: Learning path, feed pages", "model": "Sonnet", "parallel": true },
+      { "name": "Batch 6", "tasks": "Task 12: Mobile responsiveness polish", "model": "Sonnet", "parallel": false },
+      { "name": "Batch 7", "tasks": "Tasks 13, 14: Deploy to Vercel, Obsidian notes", "model": "Sonnet", "parallel": false }
+    ]
+  }
+}

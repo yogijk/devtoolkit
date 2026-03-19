@@ -1,0 +1,16 @@
+{
+  "slug": "ecommerce-site",
+  "type": "E-Commerce Site",
+  "description": "Online store with product listings, cart, checkout, and payment processing. Security and reliability are non-negotiable.",
+  "tools": ["nextjs", "typescript", "tailwindcss", "nextauth", "postgresql", "prisma", "vercel", "railway", "github"],
+  "skills": ["taste", "full-output", "test-driven-development"],
+  "agentStrategy": {
+    "primary": "sonnet",
+    "useOpusFor": "Payment integration (Stripe), cart logic, order management, security review",
+    "useHaikuFor": "Product listing pages, static content",
+    "pattern": "parallel",
+    "tip": "Never cut corners on payment and order logic — use Opus for all Stripe integration and have it do a dedicated security review before going live."
+  },
+  "complexity": "High",
+  "estimatedTasks": "20-30"
+}

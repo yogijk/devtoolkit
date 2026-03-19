@@ -1,0 +1,16 @@
+{
+  "slug": "client-web-app",
+  "type": "Client Web App",
+  "description": "Full website with user login, database, and hosting — like SafetyIQ. Includes auth, data persistence, and production deployment.",
+  "tools": ["nextjs", "typescript", "tailwindcss", "nextauth", "postgresql", "prisma", "vercel", "railway", "github"],
+  "skills": ["taste", "full-output", "test-driven-development"],
+  "agentStrategy": {
+    "primary": "sonnet",
+    "useOpusFor": "Auth design, database schema, code reviews",
+    "useHaikuFor": "JSON content files, simple config",
+    "pattern": "parallel",
+    "tip": "Build auth and database schema first — everything else depends on them. Use Opus for the schema review before writing any data access code."
+  },
+  "complexity": "High",
+  "estimatedTasks": "15-25"
+}
