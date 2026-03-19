@@ -1,0 +1,13 @@
+{
+  "slug": "obsidian",
+  "name": "Obsidian",
+  "category": "Productivity",
+  "icon": "📝",
+  "analogy": "Like a personal wiki — your notes link together so you can connect ideas",
+  "whatItDoes": "Obsidian is a note-taking app that stores all your notes as plain Markdown files on your own computer. What makes it different from other note apps is the ability to link notes together using [[wiki-style links]], which creates a graph of connected ideas you can navigate visually. Since notes are plain files, you own your data completely and can sync them however you like.",
+  "whyYouUseIt": "My entire development knowledge base lives in an Obsidian vault at ~/Obsidian/WorkHub/. Every tool I learn, every decision I make on SafetyIQ, and every code snippet I want to remember gets captured there. Notes about HSE regulations link to notes about how they influenced the SafetyIQ data model, so the context is always connected and never lost.",
+  "alternatives": ["Notion", "Logseq", "Roam Research"],
+  "whenToSwap": "Notion is better if you need to collaborate with a team, share pages publicly, or want rich databases and kanban boards alongside your notes. Logseq is a free, open-source alternative to Obsidian with a similar linking model. Roam Research pioneered the bidirectional linking concept but is expensive and has a steeper learning curve.",
+  "learnMore": "https://help.obsidian.md",
+  "level": 1
+}
