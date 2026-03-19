@@ -31,10 +31,10 @@ export default function FeedPage() {
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10">
+    <div className="max-w-4xl mx-auto px-4 py-16">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-white">What&apos;s New</h1>
-        <p className="text-[#8b8e94] mt-2">
+        <h1 className="text-3xl font-bold text-white tracking-tighter">What&apos;s New</h1>
+        <p className="text-[#8b8e94] mt-2 max-w-[65ch]">
           Trending developer tools from this week
         </p>
       </header>
@@ -51,7 +51,7 @@ export default function FeedPage() {
           <p className="text-red-400 mb-3">{error}</p>
           <button
             onClick={fetchRepos}
-            className="text-sm bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
+            className="text-sm bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-500 active:scale-[0.98] transition-all duration-200"
           >
             Retry
           </button>
@@ -60,8 +60,14 @@ export default function FeedPage() {
 
       {!loading && !error && (
         <div className="flex flex-col gap-4">
-          {repos.map((repo) => (
-            <TrendingRepoCard key={repo.id} repo={repo} />
+          {repos.map((repo, index) => (
+            <div
+              key={repo.id}
+              className="animate-fade-in"
+              style={{ animationDelay: `${index * 50}ms` }}
+            >
+              <TrendingRepoCard repo={repo} />
+            </div>
           ))}
         </div>
       )}

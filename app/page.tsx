@@ -29,26 +29,27 @@ const sections = [
 
 export default function Home() {
   return (
-    <main className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-white">DevToolkit</h1>
-        <p className="mt-3 text-lg text-[#8b8e94] max-w-2xl mx-auto">
+    <main className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <div className="mb-14">
+        <h1 className="text-4xl font-bold text-white tracking-tighter">DevToolkit</h1>
+        <p className="mt-3 text-lg text-[#8b8e94] max-w-[65ch]">
           Your personal guide to developer tools — understand what you use,
           discover what&apos;s new.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {sections.map((section) => (
+        {sections.map((section, index) => (
           <Link
             key={section.href}
             href={section.href}
-            className="block p-6 bg-[#1c1f26] border border-[#2a2e37] rounded-xl hover:brightness-125 transition-all"
+            className="block p-6 bg-[#1c1f26] border border-white/[0.06] rounded-xl hover:border-white/[0.12] active:scale-[0.98] transition-all duration-200 animate-fade-in"
+            style={{ animationDelay: `${index * 80}ms` }}
           >
             <span className="text-3xl">{section.icon}</span>
-            <h2 className="mt-3 text-xl font-semibold text-white">
+            <h2 className="mt-3 text-xl font-semibold text-white tracking-tighter">
               {section.title}
             </h2>
-            <p className="mt-2 text-[#8b8e94]">{section.description}</p>
+            <p className="mt-2 text-[#8b8e94] max-w-[65ch]">{section.description}</p>
           </Link>
         ))}
       </div>

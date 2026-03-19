@@ -29,7 +29,7 @@ export default function ToolDetailPage({ params }: PageProps) {
     Frontend: "bg-blue-900/40 text-blue-400",
     Backend: "bg-green-900/40 text-green-400",
     Database: "bg-yellow-900/40 text-yellow-400",
-    Deployment: "bg-purple-900/40 text-purple-400",
+    Deployment: "bg-emerald-900/40 text-emerald-400",
     "Dev Tools": "bg-orange-900/40 text-orange-400",
     Productivity: "bg-pink-900/40 text-pink-400",
   };
@@ -37,20 +37,20 @@ export default function ToolDetailPage({ params }: PageProps) {
   const badgeClass = categoryColors[tool.category] ?? "bg-gray-800 text-gray-400";
 
   return (
-    <main className="max-w-3xl mx-auto px-4 py-10">
+    <main className="max-w-3xl mx-auto px-4 py-16">
       {/* Back link */}
       <Link
         href="/toolkit"
-        className="inline-block mb-8 text-sm text-[#8b8e94] hover:text-[#e4e6eb] transition-colors"
+        className="inline-block mb-8 text-sm text-[#8b8e94] hover:text-[#e4e6eb] transition-colors duration-200"
       >
         ← Back to toolkit
       </Link>
 
       {/* Header */}
-      <div className="flex items-center gap-4 mb-6">
+      <div className="flex items-center gap-4 mb-6 animate-fade-in">
         <span className="text-5xl">{tool.icon}</span>
         <div>
-          <h1 className="text-3xl font-bold text-white">{tool.name}</h1>
+          <h1 className="text-3xl font-bold text-white tracking-tighter">{tool.name}</h1>
           <span
             className={`mt-1 inline-block px-2.5 py-0.5 rounded-full text-xs font-medium ${badgeClass}`}
           >
@@ -60,23 +60,23 @@ export default function ToolDetailPage({ params }: PageProps) {
       </div>
 
       {/* Think of it as... */}
-      <section className="mb-8">
+      <section className="mb-8 animate-fade-in" style={{ animationDelay: "80ms" }}>
         <h2 className="text-lg font-semibold text-[#e4e6eb] mb-2">Think of it as…</h2>
-        <blockquote className="bg-[#6c5ce7]/10 border-l-4 border-[#6c5ce7] rounded-r-lg px-5 py-4 text-[#c4b5fd] italic">
+        <blockquote className="bg-emerald-500/10 border-l-4 border-emerald-500 rounded-r-lg px-5 py-4 text-emerald-200 italic">
           {tool.analogy}
         </blockquote>
       </section>
 
       {/* What it does */}
-      <section className="mb-8">
+      <section className="mb-8 animate-fade-in" style={{ animationDelay: "160ms" }}>
         <h2 className="text-lg font-semibold text-[#e4e6eb] mb-2">What it does</h2>
-        <p className="text-[#8b8e94] leading-relaxed">{tool.whatItDoes}</p>
+        <p className="text-[#8b8e94] leading-relaxed max-w-[65ch]">{tool.whatItDoes}</p>
       </section>
 
       {/* Why you use it */}
-      <section className="mb-8">
+      <section className="mb-8 animate-fade-in" style={{ animationDelay: "240ms" }}>
         <h2 className="text-lg font-semibold text-[#e4e6eb] mb-2">Why you use it</h2>
-        <p className="text-[#8b8e94] leading-relaxed">{tool.whyYouUseIt}</p>
+        <p className="text-[#8b8e94] leading-relaxed max-w-[65ch]">{tool.whyYouUseIt}</p>
       </section>
 
       {/* Alternatives */}
@@ -94,7 +94,7 @@ export default function ToolDetailPage({ params }: PageProps) {
       {/* When to switch */}
       <section className="mb-8">
         <h2 className="text-lg font-semibold text-[#e4e6eb] mb-2">When to switch</h2>
-        <p className="text-[#8b8e94] leading-relaxed">{tool.whenToSwap}</p>
+        <p className="text-[#8b8e94] leading-relaxed max-w-[65ch]">{tool.whenToSwap}</p>
       </section>
 
       {/* Learn more */}
@@ -104,7 +104,7 @@ export default function ToolDetailPage({ params }: PageProps) {
           href={tool.learnMore}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-[#6c5ce7] hover:text-[#7c6ff7] underline underline-offset-2 transition-colors"
+          className="inline-flex items-center gap-1.5 text-emerald-500 hover:text-emerald-400 underline underline-offset-2 transition-colors duration-200"
         >
           Official documentation ↗
         </a>
@@ -113,7 +113,7 @@ export default function ToolDetailPage({ params }: PageProps) {
       {/* Bottom back link */}
       <Link
         href="/toolkit"
-        className="inline-block text-sm text-[#8b8e94] hover:text-[#e4e6eb] transition-colors"
+        className="inline-block text-sm text-[#8b8e94] hover:text-[#e4e6eb] transition-colors duration-200"
       >
         ← Back to toolkit
       </Link>

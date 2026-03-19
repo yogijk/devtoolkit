@@ -43,27 +43,32 @@ export default function LearnClient({ levels }: LearnClientProps) {
   const totalLevels = levels.length;
 
   return (
-    <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <main className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
       {/* Header */}
       <div className="mb-10">
-        <h1 className="text-3xl font-bold text-white">Learning Path</h1>
-        <p className="mt-2 text-[#8b8e94]">
+        <h1 className="text-3xl font-bold text-white tracking-tighter">Learning Path</h1>
+        <p className="mt-2 text-[#8b8e94] max-w-[65ch]">
           A structured path from web basics to professional development practices.
         </p>
-        <p className="mt-1 text-sm text-[#6c5ce7] font-medium">
+        <p className="mt-1 text-sm text-emerald-500 font-medium">
           Level {currentLevelNum} of {totalLevels}
         </p>
       </div>
 
       {/* Level cards */}
       <div className="space-y-6">
-        {levels.map((level) => (
-          <LevelCard
+        {levels.map((level, index) => (
+          <div
             key={level.level}
-            level={level}
-            progress={progress}
-            onToggle={toggleProgress}
-          />
+            className="animate-fade-in"
+            style={{ animationDelay: `${index * 80}ms` }}
+          >
+            <LevelCard
+              level={level}
+              progress={progress}
+              onToggle={toggleProgress}
+            />
+          </div>
         ))}
       </div>
     </main>

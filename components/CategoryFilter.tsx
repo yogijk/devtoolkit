@@ -13,10 +13,10 @@ export default function CategoryFilter({
     <div className="flex flex-wrap gap-2">
       <button
         onClick={() => onSelect(null)}
-        className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+        className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 active:scale-[0.98] ${
           active === null
-            ? "bg-[#6c5ce7] text-white"
-            : "bg-[#1c1f26] text-[#8b8e94] hover:brightness-125"
+            ? "bg-emerald-500 text-white"
+            : "bg-[#1c1f26] text-[#8b8e94] hover:border-white/[0.12] border border-white/[0.06]"
         }`}
       >
         All
@@ -25,10 +25,10 @@ export default function CategoryFilter({
         <button
           key={cat}
           onClick={() => onSelect(cat)}
-          className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+          className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 active:scale-[0.98] ${
             active === cat
-              ? "bg-[#6c5ce7] text-white"
-              : "bg-[#1c1f26] text-[#8b8e94] hover:brightness-125"
+              ? "bg-emerald-500 text-white"
+              : "bg-[#1c1f26] text-[#8b8e94] hover:border-white/[0.12] border border-white/[0.06]"
           }`}
         >
           {cat}

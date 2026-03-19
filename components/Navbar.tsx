@@ -16,13 +16,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-b border-[#2a2e37] bg-[#0e1217] sticky top-0 z-50">
+    <nav className="border-b border-white/[0.06] bg-[#0e1217] sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
             href="/"
-            className="text-xl font-bold text-white"
+            className="text-xl font-bold text-white tracking-tighter"
             onClick={() => setIsOpen(false)}
           >
             DevToolkit
@@ -34,9 +34,9 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 active:scale-[0.98] ${
                   pathname.startsWith(link.href)
-                    ? "bg-[#6c5ce7] text-white"
+                    ? "bg-emerald-500/15 text-emerald-400"
                     : "text-[#8b8e94] hover:text-white hover:bg-[#1c1f26]"
                 }`}
               >
@@ -47,7 +47,7 @@ export default function Navbar() {
 
           {/* Hamburger button — visible on mobile only */}
           <button
-            className="sm:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-md hover:bg-[#1c1f26] transition-colors"
+            className="sm:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-md hover:bg-[#1c1f26] transition-colors duration-200"
             onClick={() => setIsOpen((prev) => !prev)}
             aria-label="Toggle menu"
             aria-expanded={isOpen}
@@ -73,16 +73,16 @@ export default function Navbar() {
 
       {/* Mobile dropdown — full-width panel below navbar */}
       {isOpen && (
-        <div className="sm:hidden border-t border-[#2a2e37] bg-[#0e1217] w-full">
+        <div className="sm:hidden border-t border-white/[0.06] bg-[#0e1217] w-full">
           <div className="flex flex-col px-4 py-3 gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`px-3 py-3 rounded-md text-sm font-medium transition-colors ${
+                className={`px-3 py-3 rounded-md text-sm font-medium transition-all duration-200 ${
                   pathname.startsWith(link.href)
-                    ? "bg-[#6c5ce7] text-white"
+                    ? "bg-emerald-500/15 text-emerald-400"
                     : "text-[#8b8e94] hover:text-white hover:bg-[#1c1f26]"
                 }`}
               >

@@ -25,7 +25,7 @@ function StatusBadge({ status }: { status: LearningLevel["status"] }) {
   }
   if (status === "current") {
     return (
-      <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-[#6c5ce7]/20 text-[#7c6ff7]">
+      <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400">
         Current
       </span>
     );
@@ -41,10 +41,10 @@ export default function LevelCard({ level, progress, onToggle }: LevelCardProps)
   const [expanded, setExpanded] = useState(level.status === "current");
 
   return (
-    <div className="bg-[#1c1f26] border border-[#2a2e37] rounded-xl p-6">
+    <div className="bg-[#1c1f26] border border-white/[0.06] rounded-xl p-6 hover:border-white/[0.12] transition-all duration-200">
       {/* Header */}
       <div className="flex items-start justify-between gap-3 mb-3">
-        <h2 className="text-xl font-bold text-white min-w-0">
+        <h2 className="text-xl font-bold text-white tracking-tighter min-w-0">
           Level {level.level}: {level.title}
         </h2>
         <div className="flex-shrink-0 pt-0.5">
@@ -52,13 +52,13 @@ export default function LevelCard({ level, progress, onToggle }: LevelCardProps)
         </div>
       </div>
 
-      <p className="text-[#8b8e94] text-sm mb-4">{level.description}</p>
+      <p className="text-[#8b8e94] text-sm mb-4 max-w-[65ch]">{level.description}</p>
 
       {/* Expandable topics section */}
       <div>
         <button
           onClick={() => setExpanded((prev) => !prev)}
-          className="flex items-center gap-2 text-sm font-semibold text-[#e4e6eb] hover:text-white transition-colors mb-3"
+          className="flex items-center gap-2 text-sm font-semibold text-[#e4e6eb] hover:text-white transition-all duration-200 mb-3 active:scale-[0.98]"
         >
           <span>{expanded ? "▾" : "▸"}</span>
           <span>{level.topics.length} Topics</span>
@@ -71,12 +71,12 @@ export default function LevelCard({ level, progress, onToggle }: LevelCardProps)
               const isCompleted = !!progress[topicKey];
 
               return (
-                <div key={topicKey} className="border-t border-[#2a2e37] pt-5">
+                <div key={topicKey} className="border-t border-white/[0.06] pt-5">
                   <h3 className="text-base font-semibold text-[#e4e6eb] mb-2">
                     {topic.name}
                   </h3>
 
-                  <p className="text-sm text-[#8b8e94] mb-4">{topic.explanation}</p>
+                  <p className="text-sm text-[#8b8e94] mb-4 max-w-[65ch]">{topic.explanation}</p>
 
                   {/* Resources */}
                   <div className="flex flex-col gap-1.5 mb-4">
@@ -86,7 +86,7 @@ export default function LevelCard({ level, progress, onToggle }: LevelCardProps)
                         href={resource.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm text-[#6c5ce7] hover:text-[#7c6ff7] hover:underline"
+                        className="flex items-center gap-2 text-sm text-emerald-500 hover:text-emerald-400 hover:underline transition-colors duration-200"
                       >
                         <span>{resourceIcon(resource.type)}</span>
                         <span>{resource.title}</span>
@@ -108,7 +108,7 @@ export default function LevelCard({ level, progress, onToggle }: LevelCardProps)
                       type="checkbox"
                       checked={isCompleted}
                       onChange={() => onToggle(topicKey)}
-                      className="w-4 h-4 rounded border-[#2a2e37] text-[#6c5ce7] accent-[#6c5ce7] cursor-pointer"
+                      className="w-4 h-4 rounded border-[#2a2e37] text-emerald-500 accent-emerald-500 cursor-pointer"
                     />
                     <span className="text-sm text-[#8b8e94]">
                       I&apos;ve completed this

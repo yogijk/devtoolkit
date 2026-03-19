@@ -5,7 +5,7 @@ const categoryColors: Record<string, string> = {
   Frontend: "bg-blue-900/40 text-blue-400",
   Backend: "bg-green-900/40 text-green-400",
   Database: "bg-yellow-900/40 text-yellow-400",
-  Deployment: "bg-purple-900/40 text-purple-400",
+  Deployment: "bg-emerald-900/40 text-emerald-400",
   "Dev Tools": "bg-orange-900/40 text-orange-400",
   Productivity: "bg-pink-900/40 text-pink-400",
 };
@@ -20,7 +20,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
 
   return (
     <Link href={`/toolkit/${tool.slug}`}>
-      <div className="bg-[#1c1f26] border border-[#2a2e37] rounded-xl p-5 flex flex-col gap-3 h-full hover:brightness-125 transition-all cursor-pointer">
+      <div className="bg-[#1c1f26] border border-white/[0.06] rounded-xl p-5 flex flex-col gap-3 h-full hover:border-white/[0.12] active:scale-[0.98] transition-all duration-200 cursor-pointer">
         <div className="flex items-start justify-between gap-2">
           <span className="text-3xl">{tool.icon}</span>
           <span

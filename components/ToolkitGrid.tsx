@@ -37,12 +37,18 @@ export default function ToolkitGrid({ tools, categories }: ToolkitGridProps) {
         active={activeCategory}
         onSelect={setActiveCategory}
       />
-      <p className="text-sm text-[#8b8e94]">
+      <p className="text-sm text-[#8b8e94] font-medium">
         Showing {filtered.length} of {tools.length} tools
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filtered.map((tool) => (
-          <ToolCard key={tool.slug} tool={tool} />
+        {filtered.map((tool, index) => (
+          <div
+            key={tool.slug}
+            className="animate-fade-in"
+            style={{ animationDelay: `${index * 50}ms` }}
+          >
+            <ToolCard tool={tool} />
+          </div>
         ))}
       </div>
     </div>
