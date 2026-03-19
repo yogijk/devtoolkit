@@ -1,0 +1,13 @@
+{
+  "slug": "github",
+  "name": "GitHub",
+  "category": "Dev Tools",
+  "icon": "🔧",
+  "analogy": "Like Google Drive for code — stores every version, lets you undo mistakes, and share with others",
+  "whatItDoes": "GitHub is a cloud platform for hosting Git repositories. Every change you make to your code is saved as a commit — a snapshot with a message describing what changed. If something breaks, you can roll back to any previous snapshot. GitHub also connects to deployment platforms like Vercel so that pushing code automatically triggers a new deployment.",
+  "whyYouUseIt": "The SafetyIQ codebase lives on GitHub. Every feature addition — a new incident form field, a dashboard chart, a bug fix — is committed with a descriptive message so I can track exactly what changed and when. The Vercel integration means pushing to GitHub automatically redeploys the live app, removing any manual deployment steps.",
+  "alternatives": ["GitLab", "Bitbucket", "Azure DevOps"],
+  "whenToSwap": "GitLab is a strong alternative, especially if you want built-in CI/CD pipelines without third-party integrations. Bitbucket integrates tightly with Atlassian tools like Jira, making it a natural fit for teams that use that ecosystem. Azure DevOps is preferred by organisations already on Microsoft's enterprise stack.",
+  "learnMore": "https://docs.github.com",
+  "level": 1
+}

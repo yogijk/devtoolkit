@@ -1,0 +1,462 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "title": "Foundations",
+      "status": "completed",
+      "description": "The basics that everything else builds on. Without these, nothing else makes sense.",
+      "topics": [
+        {
+          "name": "HTML & CSS Basics",
+          "explanation": "HTML is the structure of every webpage — headings, paragraphs, buttons. CSS is how you make it look good — colours, layout, spacing. Every web app you build starts here.",
+          "resources": [
+            {
+              "title": "freeCodeCamp: Responsive Web Design Certification",
+              "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+              "type": "tutorial"
+            },
+            {
+              "title": "MDN: Introduction to HTML",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML",
+              "type": "docs"
+            },
+            {
+              "title": "MDN: CSS First Steps",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Build a single HTML page about yourself with a heading, a paragraph, and a list of 3 things you've built. Style it with a CSS file so it doesn't look plain."
+        },
+        {
+          "name": "JavaScript Basics",
+          "explanation": "JavaScript makes web pages interactive. Without it, pages are just static documents. It's also the language you write Next.js in, so understanding the basics unlocks everything else.",
+          "resources": [
+            {
+              "title": "freeCodeCamp: JavaScript Algorithms and Data Structures",
+              "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+              "type": "tutorial"
+            },
+            {
+              "title": "MDN: JavaScript — Dynamic client-side scripting",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript",
+              "type": "docs"
+            },
+            {
+              "title": "javascript.info: The Modern JavaScript Tutorial",
+              "url": "https://javascript.info/",
+              "type": "tutorial"
+            }
+          ],
+          "challenge": "Write a JavaScript function that takes a list of tool names and returns only the ones longer than 5 characters. Test it in your browser console."
+        },
+        {
+          "name": "How the Internet Works",
+          "explanation": "When you type a URL and press Enter, what actually happens? Understanding requests, responses, servers, and DNS means you stop treating your app like magic and start understanding why things break.",
+          "resources": [
+            {
+              "title": "MDN: How the Web works",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works",
+              "type": "docs"
+            },
+            {
+              "title": "MDN: An overview of HTTP",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview",
+              "type": "docs"
+            },
+            {
+              "title": "freeCodeCamp: How Does the Internet Work? (article)",
+              "url": "https://www.freecodecamp.org/news/how-does-the-internet-work/",
+              "type": "tutorial"
+            }
+          ],
+          "challenge": "Open your browser DevTools (F12), go to the Network tab, and reload any website. Find one GET request and explain in plain English what the request and response mean."
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "Your Current Stack",
+      "status": "current",
+      "description": "The tools you use every day. Understanding these means you can build real projects independently.",
+      "topics": [
+        {
+          "name": "Next.js Basics",
+          "explanation": "Next.js is the framework your apps run on. It handles routing, server-side rendering, and API routes. Understanding how pages and the app directory work means you stop guessing at file structure.",
+          "resources": [
+            {
+              "title": "Next.js Official Docs: Getting Started",
+              "url": "https://nextjs.org/docs/getting-started/installation",
+              "type": "docs"
+            },
+            {
+              "title": "Next.js Learn: React Foundations",
+              "url": "https://nextjs.org/learn/react-foundations",
+              "type": "tutorial"
+            },
+            {
+              "title": "Next.js Learn: App Router Course",
+              "url": "https://nextjs.org/learn/dashboard-app",
+              "type": "tutorial"
+            }
+          ],
+          "challenge": "Create a new Next.js app, add a second page at /about, and link to it from the home page using the Next.js Link component."
+        },
+        {
+          "name": "Tailwind CSS",
+          "explanation": "Instead of writing a separate CSS file, Tailwind gives you small utility classes you add directly in your HTML. It's faster once you learn the class names and it's what you already use in your projects.",
+          "resources": [
+            {
+              "title": "Tailwind CSS Docs: Getting Started",
+              "url": "https://tailwindcss.com/docs/installation",
+              "type": "docs"
+            },
+            {
+              "title": "Tailwind CSS Docs: Utility-First Fundamentals",
+              "url": "https://tailwindcss.com/docs/utility-first",
+              "type": "docs"
+            },
+            {
+              "title": "Tailwind CSS: Core Concepts Overview",
+              "url": "https://tailwindcss.com/docs/hover-focus-and-other-states",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Style a card component using only Tailwind classes — it should have a white background, rounded corners, a shadow, a title, and a description. No custom CSS allowed."
+        },
+        {
+          "name": "GitHub Workflow",
+          "explanation": "Git tracks every change you make. GitHub stores your code online so you can collaborate, roll back mistakes, and never lose work. Understanding commit → push → pull request is the foundation of all professional development.",
+          "resources": [
+            {
+              "title": "GitHub Docs: Hello World (intro guide)",
+              "url": "https://docs.github.com/en/get-started/start-your-journey/hello-world",
+              "type": "docs"
+            },
+            {
+              "title": "GitHub Docs: About Git",
+              "url": "https://docs.github.com/en/get-started/using-git/about-git",
+              "type": "docs"
+            },
+            {
+              "title": "freeCodeCamp: Git and GitHub for Beginners",
+              "url": "https://www.freecodecamp.org/news/git-and-github-for-beginners/",
+              "type": "tutorial"
+            }
+          ],
+          "challenge": "Create a new GitHub repo, clone it locally, make a change, commit it with a meaningful message, and push it. Then look at the commit history on GitHub."
+        },
+        {
+          "name": "Deploying to Vercel",
+          "explanation": "Vercel takes your GitHub repo and turns it into a live website automatically every time you push. Understanding how deployments work — and how to read the build logs when they fail — means you can ship confidently.",
+          "resources": [
+            {
+              "title": "Vercel Docs: Deploy a Next.js App",
+              "url": "https://vercel.com/docs/frameworks/nextjs",
+              "type": "docs"
+            },
+            {
+              "title": "Vercel Docs: Git Integration",
+              "url": "https://vercel.com/docs/deployments/git",
+              "type": "docs"
+            },
+            {
+              "title": "Vercel Docs: Environment Variables",
+              "url": "https://vercel.com/docs/projects/environment-variables",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Deploy a Next.js app to Vercel from GitHub. Then intentionally break a page, push the change, and watch the deployment fail. Read the error in the build logs and fix it."
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "title": "Going Deeper",
+      "status": "upcoming",
+      "description": "The skills that separate basic websites from real applications. This is where your apps become professional.",
+      "topics": [
+        {
+          "name": "Working with APIs",
+          "explanation": "An API is how your app talks to the outside world — or how other apps talk to yours. Fetching data, sending data, handling errors. Once you understand this, you can connect your app to almost anything.",
+          "resources": [
+            {
+              "title": "MDN: Fetching data from the server",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data",
+              "type": "docs"
+            },
+            {
+              "title": "MDN: Introduction to web APIs",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction",
+              "type": "docs"
+            },
+            {
+              "title": "Next.js Docs: Route Handlers (building APIs)",
+              "url": "https://nextjs.org/docs/app/building-your-application/routing/route-handlers",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Build a Next.js API route that returns a JSON list of your 3 starter templates. Then fetch that data from a page component and display the names on screen."
+        },
+        {
+          "name": "Database Design",
+          "explanation": "A database stores your app's data permanently. How you structure your tables determines how easy or painful every feature will be. Getting the basics right early saves huge rewrites later.",
+          "resources": [
+            {
+              "title": "PostgreSQL Tutorial: Getting Started",
+              "url": "https://www.postgresqltutorial.com/postgresql-getting-started/",
+              "type": "tutorial"
+            },
+            {
+              "title": "Prisma Docs: Data Modeling",
+              "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model",
+              "type": "docs"
+            },
+            {
+              "title": "Prisma Docs: Getting Started with Next.js",
+              "url": "https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgresql",
+              "type": "tutorial"
+            }
+          ],
+          "challenge": "Design a Prisma schema for a simple HSE incident log — with fields for date, location, severity, and description. Run the migration and confirm the table exists in your database."
+        },
+        {
+          "name": "Authentication Systems",
+          "explanation": "Auth means letting users sign in and protecting pages they shouldn't see if they're not logged in. NextAuth handles the hard parts, but you need to understand sessions, tokens, and callbacks to customise it.",
+          "resources": [
+            {
+              "title": "Auth.js (NextAuth) Docs: Getting Started",
+              "url": "https://authjs.dev/getting-started",
+              "type": "docs"
+            },
+            {
+              "title": "Auth.js Docs: Session Management",
+              "url": "https://authjs.dev/getting-started/session-management",
+              "type": "docs"
+            },
+            {
+              "title": "MDN: HTTP cookies (sessions explained)",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Add NextAuth to a Next.js app with GitHub as a provider. Protect one page so it redirects to login if you're not authenticated. Confirm it works by logging in and out."
+        },
+        {
+          "name": "Environment Variables & Secrets",
+          "explanation": "Your database password, API keys, and secret tokens must never go into your code. Environment variables keep them separate. Understanding how .env files work locally and how to set them in Vercel/Railway is non-negotiable for production apps.",
+          "resources": [
+            {
+              "title": "Next.js Docs: Environment Variables",
+              "url": "https://nextjs.org/docs/app/building-your-application/configuring/environment-variables",
+              "type": "docs"
+            },
+            {
+              "title": "Vercel Docs: Environment Variables",
+              "url": "https://vercel.com/docs/projects/environment-variables",
+              "type": "docs"
+            },
+            {
+              "title": "freeCodeCamp: What are Environment Variables?",
+              "url": "https://www.freecodecamp.org/news/what-are-environment-variables-and-how-can-i-use-them-with-gatsby-and-netlify/",
+              "type": "tutorial"
+            }
+          ],
+          "challenge": "Add a fake API key to your .env.local file. Reference it in a Next.js API route. Confirm it works locally. Then confirm .env.local is in your .gitignore so it never gets committed."
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "title": "Independence",
+      "status": "upcoming",
+      "description": "The meta-skills that mean you no longer need someone else to tell you what tools to use.",
+      "topics": [
+        {
+          "name": "Reading Documentation",
+          "explanation": "Good docs tell you everything you need — if you know how to read them. Most devs skip docs and search Stack Overflow instead, then wonder why things break. Learning to navigate official docs is a force multiplier for everything else.",
+          "resources": [
+            {
+              "title": "MDN Web Docs (practice reading real docs here)",
+              "url": "https://developer.mozilla.org/en-US/",
+              "type": "docs"
+            },
+            {
+              "title": "freeCodeCamp: How to Read Technical Documentation",
+              "url": "https://www.freecodecamp.org/news/how-to-read-technical-documentation/",
+              "type": "tutorial"
+            },
+            {
+              "title": "Next.js Docs (example of well-structured docs)",
+              "url": "https://nextjs.org/docs",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Pick one Next.js feature you've used but never fully understood (e.g. middleware, image optimisation). Read only the official docs — no YouTube, no tutorials — and implement a working example."
+        },
+        {
+          "name": "Evaluating New Tools",
+          "explanation": "New frameworks and libraries appear every week. Knowing how to evaluate whether something is worth learning — without hype — saves you from chasing trends and keeps your stack stable.",
+          "resources": [
+            {
+              "title": "npm: Checking package stats and maintenance",
+              "url": "https://www.npmjs.com/",
+              "type": "docs"
+            },
+            {
+              "title": "GitHub: Reading repo health signals (stars, issues, commits)",
+              "url": "https://github.com/",
+              "type": "docs"
+            },
+            {
+              "title": "State of JS: Annual developer survey results",
+              "url": "https://stateofjs.com/",
+              "type": "tutorial"
+            }
+          ],
+          "challenge": "Find a library you've never used (e.g. Zod, React Hook Form, Zustand). Before installing it, check: npm download count, GitHub stars, last commit date, open issues. Write 3 sentences on whether it's worth adding to your stack."
+        },
+        {
+          "name": "Starting Projects from Scratch",
+          "explanation": "Being able to go from zero to a working project skeleton — without a tutorial holding your hand — is the real milestone of independence. This means knowing your own setup steps by heart.",
+          "resources": [
+            {
+              "title": "Next.js Docs: Installation (create-next-app)",
+              "url": "https://nextjs.org/docs/getting-started/installation",
+              "type": "docs"
+            },
+            {
+              "title": "Prisma Docs: Add Prisma to an existing project",
+              "url": "https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-postgresql",
+              "type": "docs"
+            },
+            {
+              "title": "Railway Docs: Getting Started",
+              "url": "https://docs.railway.com/getting-started",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Start a new project from scratch with no tutorial. Create a Next.js app, connect a Railway PostgreSQL database via Prisma, set up environment variables, and deploy to Vercel. Time yourself — your goal is under 30 minutes."
+        },
+        {
+          "name": "Debugging Strategies",
+          "explanation": "Debugging isn't about luck — it's a process. Read the error, find the line, check your assumptions, isolate the problem. Developers who debug systematically solve problems in minutes; those who guess randomly spend hours.",
+          "resources": [
+            {
+              "title": "MDN: What went wrong? Troubleshooting JavaScript",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong",
+              "type": "docs"
+            },
+            {
+              "title": "Chrome DevTools: Debugging JavaScript",
+              "url": "https://developer.chrome.com/docs/devtools/javascript/",
+              "type": "tutorial"
+            },
+            {
+              "title": "freeCodeCamp: How to Debug JavaScript",
+              "url": "https://www.freecodecamp.org/news/how-to-debug-javascript-with-your-browser-s-devtools/",
+              "type": "tutorial"
+            }
+          ],
+          "challenge": "Introduce a deliberate bug into a working project (wrong variable name, missing await, bad API URL). Without looking at the change you made, use only the browser console, terminal logs, and DevTools to find and fix it."
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "title": "Professional",
+      "status": "upcoming",
+      "description": "The practices that separate hobbyists from professionals. These are what make your code reliable.",
+      "topics": [
+        {
+          "name": "Testing Your Code",
+          "explanation": "Tests are code that checks your code. They catch bugs before your users do. Even basic tests for your most important functions save enormous amounts of debugging time when you change something later.",
+          "resources": [
+            {
+              "title": "Jest Docs: Getting Started",
+              "url": "https://jestjs.io/docs/getting-started",
+              "type": "docs"
+            },
+            {
+              "title": "Testing Library Docs: React Testing Library",
+              "url": "https://testing-library.com/docs/react-testing-library/intro/",
+              "type": "docs"
+            },
+            {
+              "title": "freeCodeCamp: JavaScript Unit Testing with Jest",
+              "url": "https://www.freecodecamp.org/news/how-to-start-unit-testing-javascript/",
+              "type": "tutorial"
+            }
+          ],
+          "challenge": "Write 3 unit tests for a utility function in one of your projects using Jest — test the happy path, an edge case, and an error case. All 3 should pass."
+        },
+        {
+          "name": "Performance Basics",
+          "explanation": "A slow app loses users. Performance isn't about micro-optimisation — it's about not making obvious mistakes. Images that are too large, blocking scripts, and unnecessary re-renders are the most common culprits.",
+          "resources": [
+            {
+              "title": "web.dev: Learn Performance",
+              "url": "https://web.dev/learn/performance",
+              "type": "tutorial"
+            },
+            {
+              "title": "Next.js Docs: Optimising Images",
+              "url": "https://nextjs.org/docs/app/building-your-application/optimizing/images",
+              "type": "docs"
+            },
+            {
+              "title": "web.dev: Core Web Vitals",
+              "url": "https://web.dev/articles/vitals",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Run a Lighthouse audit on one of your deployed apps. Identify the single biggest performance issue it flags. Fix it and re-run the audit to confirm the score improved."
+        },
+        {
+          "name": "Security Fundamentals",
+          "explanation": "Most security breaches aren't sophisticated hacks — they're basic mistakes like putting secrets in code, trusting user input without validation, or leaving admin routes unprotected. Understanding the top risks protects your clients and your reputation.",
+          "resources": [
+            {
+              "title": "OWASP Top 10 Web Application Security Risks",
+              "url": "https://owasp.org/www-project-top-ten/",
+              "type": "docs"
+            },
+            {
+              "title": "MDN: Website security",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security",
+              "type": "docs"
+            },
+            {
+              "title": "Next.js Docs: Authentication and Security",
+              "url": "https://nextjs.org/docs/app/building-your-application/authentication",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Review one of your projects against the OWASP Top 10 list. Find at least one risk that applies (e.g. missing input validation, unprotected API route). Fix it and document what you changed and why."
+        },
+        {
+          "name": "CI/CD Pipelines",
+          "explanation": "CI/CD means your tests run automatically on every push, and your app deploys automatically when tests pass. It's the system that prevents broken code from reaching users — and what makes professional teams move fast with confidence.",
+          "resources": [
+            {
+              "title": "GitHub Actions Docs: Understanding GitHub Actions",
+              "url": "https://docs.github.com/en/actions/about-github-actions/understanding-github-actions",
+              "type": "docs"
+            },
+            {
+              "title": "GitHub Actions Docs: Building and testing Node.js",
+              "url": "https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-nodejs",
+              "type": "docs"
+            },
+            {
+              "title": "Vercel Docs: Git Integration (auto-deploy on push)",
+              "url": "https://vercel.com/docs/deployments/git",
+              "type": "docs"
+            }
+          ],
+          "challenge": "Add a GitHub Actions workflow to one of your repos that runs your Jest tests on every push to main. Confirm it passes on a good push and fails when you introduce a broken test."
+        }
+      ]
+    }
+  ]
+}

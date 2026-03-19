@@ -1,0 +1,13 @@
+{
+  "slug": "nextjs",
+  "name": "Next.js",
+  "category": "Frontend",
+  "icon": "⚛️",
+  "analogy": "Like a kitchen that comes with an oven, stove, and fridge built in — instead of buying each separately",
+  "whatItDoes": "Next.js is a framework built on top of React that gives you everything you need to build a full web application. It handles page routing, server-side rendering, and API endpoints all in one package. You write your pages as files in a folder and Next.js automatically turns them into a working website.",
+  "whyYouUseIt": "SafetyIQ is built entirely on Next.js because it handles both the frontend dashboard and the backend API routes in a single project. This meant I could build the incident reporting forms, the data display pages, and the server logic without needing to set up a separate backend server — everything lives in one codebase.",
+  "alternatives": ["Remix", "Nuxt.js", "SvelteKit"],
+  "whenToSwap": "If you are building a simple static site with no dynamic data, plain React or even plain HTML might be simpler. If your team already uses Vue.js, Nuxt.js is the equivalent. Remix is worth considering if you need more control over how data loads on each page.",
+  "learnMore": "https://nextjs.org/docs",
+  "level": 2
+}

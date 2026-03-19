@@ -1,0 +1,7 @@
+{
+  "slug": "static-website",
+  "type": "Static Website",
+  "description": "A portfolio, landing page, or informational site — no login, no database. Just content that looks great on any device.",
+  "tools": ["nextjs", "typescript", "tailwindcss", "vercel", "github"],
+  "why": "Same framework but simpler. No backend complexity — just pages and styling. Fastest to build and cheapest to host (free on Vercel)."
+}

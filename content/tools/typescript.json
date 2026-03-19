@@ -1,0 +1,13 @@
+{
+  "slug": "typescript",
+  "name": "TypeScript",
+  "category": "Frontend",
+  "icon": "⚛️",
+  "analogy": "Like spell-check for code — it catches mistakes before you run the program",
+  "whatItDoes": "TypeScript is a superset of JavaScript that adds type annotations to your code. You declare what kind of data a variable holds — a string, a number, an object with specific fields — and TypeScript warns you immediately in your editor if you use it incorrectly. It compiles down to regular JavaScript so browsers and Node.js can run it.",
+  "whyYouUseIt": "In SafetyIQ, incident records have many fields — site, severity, date, reporter name. TypeScript means I can define exactly what an incident object looks like and get an instant error if I try to save the wrong type of data to the database. This is especially important for an HSE app where data accuracy directly affects safety reporting.",
+  "alternatives": ["JavaScript (plain)", "Flow", "JSDoc"],
+  "whenToSwap": "If you are building a very small script or prototype and want to move fast without setting up types, plain JavaScript is fine. JSDoc lets you add some type hints without switching languages. Flow is a Facebook alternative to TypeScript but has a much smaller community and ecosystem.",
+  "learnMore": "https://www.typescriptlang.org/docs/",
+  "level": 2
+}

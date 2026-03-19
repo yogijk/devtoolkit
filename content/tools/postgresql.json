@@ -1,0 +1,13 @@
+{
+  "slug": "postgresql",
+  "name": "PostgreSQL",
+  "category": "Database",
+  "icon": "🗄️",
+  "analogy": "Like a giant organized spreadsheet that can handle millions of rows and multiple users at once",
+  "whatItDoes": "PostgreSQL is a powerful open-source relational database that stores structured data in tables with rows and columns. It supports complex queries, relationships between tables, and can handle multiple users reading and writing at the same time without data corruption. It has been in development for over 30 years and is trusted by major companies worldwide.",
+  "whyYouUseIt": "All SafetyIQ data lives in PostgreSQL — incidents, users, sites, and audit logs are stored in separate tables that link together. When you view an incident report, PostgreSQL joins the incident table with the user table and site table to give you the full picture in one query. For an HSE application where data integrity and audit trails matter, a reliable relational database is essential.",
+  "alternatives": ["MySQL", "SQLite", "MongoDB"],
+  "whenToSwap": "SQLite is fine for small local apps or prototypes that do not need a server, but it does not scale to multiple simultaneous users. MySQL is a reasonable alternative with a similar feature set. MongoDB is better if your data is highly variable in structure and you do not want to define a fixed schema upfront.",
+  "learnMore": "https://www.postgresql.org/docs/",
+  "level": 3
+}

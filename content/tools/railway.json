@@ -1,0 +1,13 @@
+{
+  "slug": "railway",
+  "name": "Railway",
+  "category": "Deployment",
+  "icon": "🚀",
+  "analogy": "Like renting a computer in the cloud that runs your database 24/7",
+  "whatItDoes": "Railway is a cloud platform that lets you deploy databases, APIs, and other backend services without managing servers yourself. You can spin up a PostgreSQL database in minutes and Railway handles backups, uptime, and scaling. It connects easily to other services in your stack and provides a simple dashboard to monitor your deployments.",
+  "whyYouUseIt": "The PostgreSQL database for SafetyIQ runs on Railway. Vercel hosts the Next.js app, but Vercel cannot host a persistent database — so Railway fills that gap by keeping the database running around the clock. The DATABASE_URL environment variable in SafetyIQ points directly to the Railway-hosted PostgreSQL instance.",
+  "alternatives": ["Supabase", "Render", "Fly.io"],
+  "whenToSwap": "Supabase is a great alternative that bundles a PostgreSQL database with built-in auth, storage, and a real-time API — all in one product. Render offers a similar deployment model with slightly different pricing. Fly.io gives you more control and is better for teams that want to deploy Docker containers globally.",
+  "learnMore": "https://docs.railway.com",
+  "level": 3
+}

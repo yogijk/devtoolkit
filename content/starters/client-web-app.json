@@ -1,0 +1,7 @@
+{
+  "slug": "client-web-app",
+  "type": "Client Web App",
+  "description": "A full website with user login, database, and hosting — like SafetyIQ. Best for Upwork clients who need a professional web application.",
+  "tools": ["nextjs", "typescript", "tailwindcss", "nextauth", "postgresql", "prisma", "vercel", "railway", "github"],
+  "why": "This is your proven stack. You built SafetyIQ with it, you know how the pieces fit together, and it handles real production traffic."
+}

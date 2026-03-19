@@ -1,0 +1,13 @@
+{
+  "slug": "npm",
+  "name": "npm",
+  "category": "Dev Tools",
+  "icon": "🔧",
+  "analogy": "Like an app store for code — other developers share useful tools you can install with one command",
+  "whatItDoes": "npm (Node Package Manager) is the default package manager that comes with Node.js. It lets you install, update, and manage third-party libraries — called packages — that other developers have published. The 'package.json' file in every project lists which packages it depends on, so anyone who clones the project can run 'npm install' to get everything they need.",
+  "whyYouUseIt": "Every dependency in SafetyIQ — Next.js, Prisma, NextAuth, Tailwind — was installed via npm. Running 'npm install next-auth' pulled in the authentication library and all its dependencies automatically. Without npm, I would have had to find, download, and manually configure each library, which would be impractical for a project with dozens of dependencies.",
+  "alternatives": ["yarn", "pnpm", "bun"],
+  "whenToSwap": "pnpm is a faster, more disk-efficient alternative to npm and is gaining popularity in large monorepo setups. yarn is another popular alternative with a slightly different configuration syntax. Bun is the newest option and is dramatically faster than npm, though it is still maturing — worth watching for future projects.",
+  "learnMore": "https://docs.npmjs.com",
+  "level": 2
+}

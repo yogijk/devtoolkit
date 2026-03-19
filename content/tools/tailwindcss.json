@@ -1,0 +1,13 @@
+{
+  "slug": "tailwindcss",
+  "name": "Tailwind CSS",
+  "category": "Frontend",
+  "icon": "⚛️",
+  "analogy": "Like a box of labeled paint colors — instead of mixing your own, you pick from ready-made options",
+  "whatItDoes": "Tailwind CSS is a utility-first CSS framework that gives you hundreds of small, single-purpose class names to style your HTML directly. Instead of writing a separate stylesheet, you add classes like 'text-red-500' or 'p-4' right on your elements. It keeps your styling close to your structure and removes the need to name every CSS class yourself.",
+  "whyYouUseIt": "Tailwind made it possible to style the SafetyIQ dashboard quickly without needing deep CSS knowledge. The color system, spacing scale, and responsive utilities meant I could make the incident tables and forms look professional on both desktop and mobile without writing custom stylesheets. The consistent design tokens also kept the UI looking uniform across all pages.",
+  "alternatives": ["Bootstrap", "Material UI", "Chakra UI"],
+  "whenToSwap": "If you want a complete component library with pre-built dropdowns, modals, and data tables, Material UI or Chakra UI will save you more time. Bootstrap is a good choice if you are already familiar with it or need a quick prototype. Tailwind requires more upfront setup and works best when you want full control over your design.",
+  "learnMore": "https://tailwindcss.com/docs",
+  "level": 2
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "vercel",
+  "name": "Vercel",
+  "category": "Deployment",
+  "icon": "🚀",
+  "analogy": "Like a postal service for websites — you give it your code, it puts it on the internet",
+  "whatItDoes": "Vercel is a cloud platform built specifically for deploying Next.js and other frontend applications. You connect your GitHub repository and Vercel automatically builds and deploys your site every time you push new code. It also provides a global CDN, so your site loads fast for users anywhere in the world.",
+  "whyYouUseIt": "SafetyIQ is live at app-yogi-jk.vercel.app thanks to Vercel. Every time I push an update to the GitHub repository, Vercel automatically rebuilds and redeploys the app within minutes — no manual server management required. For a solo HSE professional managing a SaaS side project, this automation is critical.",
+  "alternatives": ["Netlify", "Cloudflare Pages", "AWS Amplify"],
+  "whenToSwap": "Netlify is a comparable alternative with a similar automatic deployment model and slightly different pricing. Cloudflare Pages is faster globally and has a generous free tier. AWS Amplify makes sense if your team is already deeply invested in the AWS ecosystem and wants everything in one place.",
+  "learnMore": "https://vercel.com/docs",
+  "level": 2
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "vscode",
+  "name": "VS Code",
+  "category": "Dev Tools",
+  "icon": "🔧",
+  "analogy": "Like a carpenter's workbench — where you write, edit, and organize all your code",
+  "whatItDoes": "VS Code (Visual Studio Code) is a free code editor made by Microsoft. It provides syntax highlighting, intelligent autocomplete, a built-in terminal, Git integration, and a massive library of extensions — all in one lightweight application. It works with virtually every programming language and is the most widely used code editor in the world.",
+  "whyYouUseIt": "VS Code is where all the SafetyIQ and HSE app code gets written. The TypeScript integration gives me real-time type errors as I type, and the Tailwind CSS IntelliSense extension shows me autocomplete suggestions for class names. The integrated terminal means I can run 'npm run dev' without switching to a separate window.",
+  "alternatives": ["Cursor", "WebStorm", "Vim/Neovim"],
+  "whenToSwap": "Cursor is a VS Code fork with AI assistance built directly into the editor — it is worth trying if you want AI suggestions that understand your whole codebase. WebStorm is a paid editor from JetBrains with more powerful refactoring tools, better suited to large team projects. Vim/Neovim is for developers who want maximum speed and live in the terminal.",
+  "learnMore": "https://code.visualstudio.com/docs",
+  "level": 1
+}

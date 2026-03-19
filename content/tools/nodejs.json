@@ -1,0 +1,13 @@
+{
+  "slug": "nodejs",
+  "name": "Node.js",
+  "category": "Backend",
+  "icon": "🖥️",
+  "analogy": "Like an engine that lets JavaScript run outside the browser — on servers, your laptop, anywhere",
+  "whatItDoes": "Node.js is a runtime environment that allows JavaScript to run on a server or your local machine, not just inside a web browser. It is what powers the backend of most modern JavaScript applications, including Next.js. When you run 'npm install' or start your development server, Node.js is what is executing those commands.",
+  "whyYouUseIt": "Node.js is the foundation that runs the entire SafetyIQ application locally during development and in production on the server. Every time I start the dev server with 'npm run dev', Node.js is the engine running it. It also runs the API routes that fetch incident data from the PostgreSQL database.",
+  "alternatives": ["Python", "Go", "PHP"],
+  "whenToSwap": "If you are building data-heavy processing, machine learning pipelines, or scientific calculations, Python is a much better fit. Go is better for high-performance services that need to handle thousands of simultaneous connections. PHP is worth considering only if you are maintaining existing legacy web projects.",
+  "learnMore": "https://nodejs.org/docs/latest/api/",
+  "level": 2
+}

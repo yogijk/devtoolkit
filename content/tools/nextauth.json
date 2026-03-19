@@ -1,0 +1,13 @@
+{
+  "slug": "nextauth",
+  "name": "NextAuth.js",
+  "category": "Backend",
+  "icon": "🖥️",
+  "analogy": "Like a security guard for your app — handles login, logout, and who can see what",
+  "whatItDoes": "NextAuth.js is an authentication library built specifically for Next.js applications. It handles the entire login flow — creating sessions, managing cookies, and connecting to providers like Google or GitHub — so you do not have to build that from scratch. It also protects routes so only logged-in users can access certain pages.",
+  "whyYouUseIt": "SafetyIQ needs to ensure that only authorised HSE team members can submit incidents and view reports. NextAuth handles the login page, the session management, and the protection of the dashboard routes. Without it, anyone with the URL could access sensitive safety data — which is unacceptable for a compliance tool.",
+  "alternatives": ["Clerk", "Auth0", "Supabase Auth"],
+  "whenToSwap": "If you want a fully managed solution with a beautiful pre-built UI and user management dashboard, Clerk is much easier to set up. Auth0 is better for enterprise apps that need advanced role management and compliance. Supabase Auth is the natural choice if you are already using Supabase as your database.",
+  "learnMore": "https://next-auth.js.org/getting-started/introduction",
+  "level": 3
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "claude-code",
+  "name": "Claude Code",
+  "category": "Dev Tools",
+  "icon": "🔧",
+  "analogy": "Like having a senior developer sitting next to you — you describe what you want, it writes the code",
+  "whatItDoes": "Claude Code is an AI-powered coding assistant made by Anthropic that runs in your terminal. You describe a feature, a bug fix, or a question in plain English and it reads your codebase, writes or edits the relevant files, and explains what it did. Unlike a simple autocomplete tool, it understands the full context of your project and can make coordinated changes across multiple files at once.",
+  "whyYouUseIt": "As an HSE professional who did not come from a software engineering background, Claude Code made it possible to build SafetyIQ from scratch. When I needed to add a new feature — like filtering incidents by site or generating a PDF report — I described what I wanted and Claude Code implemented it, explained the approach, and helped me understand the code so I could maintain it myself.",
+  "alternatives": ["GitHub Copilot", "Cursor AI", "Codeium"],
+  "whenToSwap": "GitHub Copilot is better integrated into VS Code and works well for autocomplete as you type, if you prefer in-editor suggestions over a terminal-based workflow. Cursor is a full editor replacement that wraps VS Code with AI features built in. Codeium is a free alternative for basic autocomplete. Claude Code shines for large, multi-file tasks that require understanding the whole project.",
+  "learnMore": "https://docs.anthropic.com/en/docs/claude-code/overview",
+  "level": 2
+}

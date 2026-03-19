@@ -1,0 +1,7 @@
+{
+  "slug": "internal-tool",
+  "type": "Internal Tool",
+  "description": "A company dashboard or data viewer for internal use — like an HSE records viewer for Team Inc. May or may not need login.",
+  "tools": ["nextjs", "typescript", "tailwindcss", "postgresql", "prisma", "vercel", "railway", "github"],
+  "why": "Similar to Client Web App but scoped for internal users. You can skip polished UI and focus on functionality. Auth is optional if it's behind a company VPN."
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "prisma",
+  "name": "Prisma",
+  "category": "Database",
+  "icon": "🗄️",
+  "analogy": "Like a translator between your code and the database — you write JavaScript, it writes SQL",
+  "whatItDoes": "Prisma is an ORM (Object-Relational Mapper) that lets you interact with your database using TypeScript instead of raw SQL. You define your database schema in a 'schema.prisma' file, and Prisma generates a fully typed client that you can use to query, create, update, and delete records in plain JavaScript syntax. It also handles database migrations — tracking changes to your schema over time.",
+  "whyYouUseIt": "In SafetyIQ, Prisma is the layer that sits between the Next.js API routes and the PostgreSQL database. Instead of writing raw SQL like 'SELECT * FROM incidents WHERE site_id = 3', I write Prisma queries in TypeScript and get full autocomplete and type safety. This reduces the risk of query errors and makes it easy to add new fields to the incident schema as requirements evolve.",
+  "alternatives": ["Drizzle", "TypeORM", "Knex.js"],
+  "whenToSwap": "Drizzle is a newer, lighter alternative that gives you more SQL-like control and is gaining popularity fast — worth considering for new projects. TypeORM works well if your team comes from a Java or C# background and prefers class-based models. Knex.js is better when you want to write SQL yourself but with a nice query builder on top.",
+  "learnMore": "https://www.prisma.io/docs",
+  "level": 3
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "react",
+  "name": "React",
+  "category": "Frontend",
+  "icon": "⚛️",
+  "analogy": "Like LEGO blocks for websites — you build small pieces and snap them together",
+  "whatItDoes": "React is a JavaScript library made by Meta for building user interfaces. You create reusable components — like a button, a form, or a navigation bar — and compose them together to build full pages. When the data changes, React automatically updates only the parts of the page that need to change, without reloading the whole thing.",
+  "whyYouUseIt": "Every visual element in SafetyIQ — the incident form, the stats dashboard, the navigation menu — is a React component. Because components are reusable, I built the incident card once and it appears consistently everywhere it is needed. This keeps the UI consistent across the HSE reporting screens.",
+  "alternatives": ["Vue.js", "Svelte", "Angular"],
+  "whenToSwap": "If you want something that feels simpler and compiles to smaller bundles, Svelte is worth exploring. Vue.js has a gentler learning curve and is popular in Asia-Pacific teams. Angular is better suited to large enterprise teams that want strict structure enforced by the framework.",
+  "learnMore": "https://react.dev",
+  "level": 2
+}
