@@ -9,5 +9,421 @@
   "alternatives": ["GitHub Copilot", "Cursor AI", "Codeium"],
   "whenToSwap": "GitHub Copilot is better integrated into VS Code and works well for autocomplete as you type, if you prefer in-editor suggestions over a terminal-based workflow. Cursor is a full editor replacement that wraps VS Code with AI features built in. Codeium is a free alternative for basic autocomplete. Claude Code shines for large, multi-file tasks that require understanding the whole project.",
   "learnMore": "https://docs.anthropic.com/en/docs/claude-code/overview",
-  "level": 2
+  "level": 2,
+  "referenceSheets": [
+    {
+      "id": "keyboard-shortcuts",
+      "title": "Keyboard Shortcuts",
+      "icon": "⌨️",
+      "tables": [
+        {
+          "title": "General Controls",
+          "columns": ["Shortcut", "What It Does"],
+          "rows": [
+            ["Ctrl+C", "Cancel current input or stop generation"],
+            ["Ctrl+D", "Exit Claude Code session"],
+            ["Ctrl+F", "Kill all background agents (press twice to confirm)"],
+            ["Ctrl+G", "Open prompt in default text editor"],
+            ["Ctrl+L", "Clear terminal screen (keeps history)"],
+            ["Ctrl+O", "Toggle verbose output"],
+            ["Ctrl+R", "Reverse search command history"],
+            ["Ctrl+B", "Background running tasks"],
+            ["Ctrl+T", "Toggle task list visibility"],
+            ["Ctrl+V / Cmd+V", "Paste image from clipboard"],
+            ["Esc + Esc", "Rewind/summarize conversation"],
+            ["Shift+Tab / Alt+M", "Cycle permission modes"],
+            ["Option+P / Alt+P", "Switch model"],
+            ["Option+T / Alt+T", "Toggle extended thinking"]
+          ]
+        },
+        {
+          "title": "Text Editing",
+          "columns": ["Shortcut", "What It Does"],
+          "rows": [
+            ["Ctrl+K", "Delete to end of line"],
+            ["Ctrl+U", "Delete entire line"],
+            ["Ctrl+Y", "Paste deleted text"],
+            ["Alt+Y", "Cycle paste history"],
+            ["Alt+B", "Move cursor back one word"],
+            ["Alt+F", "Move cursor forward one word"]
+          ]
+        },
+        {
+          "title": "Multiline Input",
+          "columns": ["Shortcut", "What It Does"],
+          "rows": [
+            ["\\ + Enter", "New line (all terminals)"],
+            ["Option+Enter", "New line (macOS)"],
+            ["Shift+Enter", "New line (iTerm2, WezTerm, Ghostty, Kitty)"],
+            ["Ctrl+J", "Insert line feed character"]
+          ]
+        },
+        {
+          "title": "Quick Prefixes",
+          "columns": ["Prefix", "What It Does"],
+          "rows": [
+            ["/", "Open command/skill menu"],
+            ["!", "Run a bash command directly"],
+            ["@", "File path autocomplete/mention"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-flags",
+      "title": "CLI Flags",
+      "icon": "🚩",
+      "tables": [
+        {
+          "title": "Session Control",
+          "columns": ["Flag", "What It Does"],
+          "rows": [
+            ["--continue / -c", "Resume most recent session"],
+            ["--resume / -r", "Resume specific session by ID"],
+            ["--fork-session", "New session ID when resuming"],
+            ["--from-pr <PR>", "Resume sessions linked to GitHub PR"],
+            ["--name / -n", "Name the session"],
+            ["--print / -p", "One-shot mode (no interactive)"],
+            ["--remote", "Create web session on claude.ai"],
+            ["--teleport", "Resume web session locally"],
+            ["--remote-control / --rc", "Enable remote control"],
+            ["--init", "Run init hooks, then interactive"],
+            ["--init-only", "Run init hooks, then exit"]
+          ]
+        },
+        {
+          "title": "Model & Configuration",
+          "columns": ["Flag", "What It Does"],
+          "rows": [
+            ["--model / -m", "Set model (sonnet, opus, haiku)"],
+            ["--effort <level>", "Set effort: low/medium/high/max/auto"],
+            ["--fallback-model", "Fallback if overloaded (print mode)"],
+            ["--system-prompt", "Replace system prompt"],
+            ["--append-system-prompt", "Append to system prompt"],
+            ["--agent <agent>", "Use specific agent"],
+            ["--agents <json>", "Define custom agents dynamically"]
+          ]
+        },
+        {
+          "title": "Permissions & Access",
+          "columns": ["Flag", "What It Does"],
+          "rows": [
+            ["--dangerously-skip-permissions", "Skip ALL permission prompts"],
+            ["--permission-mode <mode>", "Set mode: default/plan/acceptEdits/dontAsk/bypassPermissions"],
+            ["--allowedTools <rules>", "Pre-approve tools"],
+            ["--disallowedTools <rules>", "Block specific tools"],
+            ["--tools <tools>", "Restrict available tools"]
+          ]
+        },
+        {
+          "title": "Output & Format",
+          "columns": ["Flag", "What It Does"],
+          "rows": [
+            ["--output-format", "Output: text/json/stream-json"],
+            ["--input-format", "Input: text/stream-json"],
+            ["--json-schema", "Validate JSON output against schema"],
+            ["--no-markdown", "Disable markdown rendering"],
+            ["--max-turns <N>", "Limit agentic turns"],
+            ["--max-budget-usd", "Spending limit"],
+            ["--verbose", "Show detailed output"],
+            ["--version / -v", "Show version"],
+            ["--help / -h", "Show help"]
+          ]
+        },
+        {
+          "title": "Advanced",
+          "columns": ["Flag", "What It Does"],
+          "rows": [
+            ["--add-dir <paths>", "Add working directories"],
+            ["--worktree / -w", "Use isolated git worktree"],
+            ["--mcp-config <files>", "Load MCP servers from JSON"],
+            ["--bare", "Minimal mode (skip auto-discovery)"],
+            ["--chrome / --no-chrome", "Enable/disable Chrome"],
+            ["--ide", "Auto-connect to IDE"],
+            ["--debug <categories>", "Debug mode (api,hooks,mcp)"],
+            ["--plugin-dir <path>", "Load plugins from directory"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subcommands",
+      "title": "CLI Subcommands",
+      "icon": "📦",
+      "tables": [
+        {
+          "title": "Subcommands",
+          "columns": ["Command", "What It Does"],
+          "rows": [
+            ["claude mcp add <name>", "Add an MCP server"],
+            ["claude mcp remove <name>", "Remove an MCP server"],
+            ["claude mcp list", "List configured MCP servers"],
+            ["claude mcp test <name>", "Test an MCP server"],
+            ["claude agents list", "List configured subagents"],
+            ["claude agents show <name>", "Show subagent details"],
+            ["claude agents edit <name>", "Edit a subagent"],
+            ["claude auth login", "Sign in"],
+            ["claude auth logout", "Sign out"],
+            ["claude auth status", "Show auth status"],
+            ["claude update", "Update to latest version"],
+            ["claude remote-control", "Start Remote Control server"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slash-commands",
+      "title": "Slash Commands",
+      "icon": "⚡",
+      "tables": [
+        {
+          "title": "Session & Navigation",
+          "columns": ["Command", "What It Does"],
+          "rows": [
+            ["/clear", "Clear history and start fresh"],
+            ["/resume", "Resume a previous session"],
+            ["/rewind", "Rewind to a checkpoint"],
+            ["/branch [name]", "Branch conversation"],
+            ["/rename [name]", "Rename session"],
+            ["/export", "Export conversation"],
+            ["/compact", "Summarize to save context"]
+          ]
+        },
+        {
+          "title": "Configuration & Status",
+          "columns": ["Command", "What It Does"],
+          "rows": [
+            ["/config", "Open settings UI"],
+            ["/status", "Show version, model, account"],
+            ["/cost", "Show token usage"],
+            ["/context", "Visualize context window usage"],
+            ["/usage", "Show plan limits"],
+            ["/effort [level]", "Set effort level"],
+            ["/model [model]", "Switch model"],
+            ["/fast [on/off]", "Toggle fast mode"]
+          ]
+        },
+        {
+          "title": "Permissions & Security",
+          "columns": ["Command", "What It Does"],
+          "rows": [
+            ["/permissions", "View/update permissions"],
+            ["/sandbox", "Toggle sandbox mode"],
+            ["/security-review", "Analyze branch for vulnerabilities"]
+          ]
+        },
+        {
+          "title": "Tools & Integration",
+          "columns": ["Command", "What It Does"],
+          "rows": [
+            ["/add-dir <path>", "Add working directory"],
+            ["/mcp", "Manage MCP servers"],
+            ["/chrome", "Configure Chrome"],
+            ["/ide", "Manage IDE integrations"],
+            ["/hooks", "View hook configurations"],
+            ["/plugin", "Manage plugins"],
+            ["/agents", "Manage subagent configs"]
+          ]
+        },
+        {
+          "title": "Workflow",
+          "columns": ["Command", "What It Does"],
+          "rows": [
+            ["/copy [N]", "Copy response to clipboard"],
+            ["/diff", "Interactive diff viewer"],
+            ["/pr-comments [PR]", "Fetch PR comments"],
+            ["/tasks", "List background tasks"],
+            ["/btw <question>", "Side question (no history)"],
+            ["/plan", "Enter plan mode"],
+            ["/review", "Review code changes"]
+          ]
+        },
+        {
+          "title": "Info & Help",
+          "columns": ["Command", "What It Does"],
+          "rows": [
+            ["/help", "Show help"],
+            ["/release-notes", "View changelog"],
+            ["/skills", "List available skills"],
+            ["/doctor", "Diagnose installation"],
+            ["/keybindings", "View/edit keybindings"],
+            ["/terminal-setup", "Configure terminal shortcuts"],
+            ["/vim", "Toggle Vim mode"],
+            ["/theme", "Change color theme"],
+            ["/voice", "Toggle voice dictation"]
+          ]
+        },
+        {
+          "title": "Auth & Account",
+          "columns": ["Command", "What It Does"],
+          "rows": [
+            ["/login", "Sign in"],
+            ["/logout", "Sign out"],
+            ["/upgrade", "Switch plan tier"],
+            ["/desktop", "Continue in Desktop app"],
+            ["/mobile", "Show mobile app QR code"],
+            ["/feedback", "Submit feedback"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "env-variables",
+      "title": "Environment Variables",
+      "icon": "🔑",
+      "tables": [
+        {
+          "title": "Authentication & API",
+          "columns": ["Variable", "What It Does"],
+          "rows": [
+            ["ANTHROPIC_API_KEY", "API key override"],
+            ["ANTHROPIC_AUTH_TOKEN", "Custom Authorization header"],
+            ["ANTHROPIC_BASE_URL", "Custom API endpoint"],
+            ["ANTHROPIC_CUSTOM_HEADERS", "Add custom headers"]
+          ]
+        },
+        {
+          "title": "Model Configuration",
+          "columns": ["Variable", "What It Does"],
+          "rows": [
+            ["ANTHROPIC_MODEL", "Default model to use"],
+            ["ANTHROPIC_DEFAULT_SONNET_MODEL", "Custom Sonnet model ID"],
+            ["ANTHROPIC_DEFAULT_HAIKU_MODEL", "Custom Haiku model ID"],
+            ["ANTHROPIC_DEFAULT_OPUS_MODEL", "Custom Opus model ID"],
+            ["CLAUDE_CODE_SUBAGENT_MODEL", "Model for subagents"],
+            ["CLAUDE_CODE_EFFORT_LEVEL", "Effort: low/medium/high/max/auto"],
+            ["MAX_THINKING_TOKENS", "Extended thinking budget"]
+          ]
+        },
+        {
+          "title": "Cloud Providers",
+          "columns": ["Variable", "What It Does"],
+          "rows": [
+            ["CLAUDE_CODE_USE_BEDROCK", "Route through AWS Bedrock"],
+            ["CLAUDE_CODE_USE_VERTEX", "Route through Google Vertex"],
+            ["CLAUDE_CODE_USE_FOUNDRY", "Route through Anthropic Foundry"]
+          ]
+        },
+        {
+          "title": "Context & Performance",
+          "columns": ["Variable", "What It Does"],
+          "rows": [
+            ["CLAUDE_AUTOCOMPACT_PCT_OVERRIDE", "Auto-compact threshold (1-100%)"],
+            ["CLAUDE_CODE_MAX_OUTPUT_TOKENS", "Override max output tokens"],
+            ["BASH_MAX_OUTPUT_LENGTH", "Bash output truncation threshold"],
+            ["BASH_DEFAULT_TIMEOUT_MS", "Default bash timeout"],
+            ["BASH_MAX_TIMEOUT_MS", "Maximum bash timeout"]
+          ]
+        },
+        {
+          "title": "Session & Behavior",
+          "columns": ["Variable", "What It Does"],
+          "rows": [
+            ["CLAUDE_CODE_SIMPLE", "Minimal mode (Bash, Read, Edit only)"],
+            ["CLAUDE_CODE_SHELL", "Override shell detection"],
+            ["CLAUDE_CODE_DISABLE_AUTO_MEMORY", "Disable auto memory"],
+            ["CLAUDE_CODE_DISABLE_BACKGROUND_TASKS", "Disable backgrounding"],
+            ["CLAUDE_CONFIG_DIR", "Custom config directory"],
+            ["CLAUDE_ENV_FILE", "Shell script sourced before bash"]
+          ]
+        },
+        {
+          "title": "MCP & Tools",
+          "columns": ["Variable", "What It Does"],
+          "rows": [
+            ["ENABLE_TOOL_SEARCH", "MCP tool search: true/auto/false"],
+            ["MAX_MCP_OUTPUT_TOKENS", "MCP output token limit"],
+            ["MCP_TIMEOUT", "MCP startup timeout (ms)"],
+            ["MCP_TOOL_TIMEOUT", "MCP tool execution timeout (ms)"]
+          ]
+        },
+        {
+          "title": "Telemetry & Debugging",
+          "columns": ["Variable", "What It Does"],
+          "rows": [
+            ["DISABLE_AUTOUPDATER", "Disable auto-updates"],
+            ["DISABLE_TELEMETRY", "Opt out of telemetry"],
+            ["DISABLE_ERROR_REPORTING", "Opt out of Sentry"],
+            ["DISABLE_COST_WARNINGS", "Disable cost messages"],
+            ["DISABLE_NONESSENTIAL_TRAFFIC", "Disable updater, feedback, telemetry"],
+            ["CLAUDE_CODE_DISABLE_FAST_MODE", "Disable fast mode"],
+            ["CLAUDE_CODE_DISABLE_1M_CONTEXT", "Disable 1M context window"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "permission-modes",
+      "title": "Permission Modes",
+      "icon": "🔒",
+      "tables": [
+        {
+          "title": "Available Modes",
+          "columns": ["Mode", "Behavior"],
+          "rows": [
+            ["default", "Ask on first use of each tool"],
+            ["acceptEdits", "Auto-accept file edits, ask for rest"],
+            ["plan", "Analysis only — no modifications"],
+            ["dontAsk", "Auto-deny unless pre-approved"],
+            ["bypassPermissions", "Skip all prompts (dangerous)"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hook-events",
+      "title": "Hook Events",
+      "icon": "🪝",
+      "tables": [
+        {
+          "title": "Lifecycle Events",
+          "columns": ["Event", "When It Fires"],
+          "rows": [
+            ["SessionStart", "Session begins"],
+            ["InstructionsLoaded", "After CLAUDE.md loads"],
+            ["UserPromptSubmit", "User submits prompt"],
+            ["PreToolUse", "Before tool execution"],
+            ["PostToolUse", "After tool succeeds"],
+            ["PostToolUseFailure", "After tool fails"],
+            ["PermissionRequest", "Permission prompt needed"],
+            ["PreCompact", "Before context compaction"],
+            ["PostCompact", "After compaction"],
+            ["SubagentStart", "Subagent spawned"],
+            ["SubagentStop", "Subagent stopped"],
+            ["Stop", "Claude stops responding"],
+            ["TaskCompleted", "Task finished"],
+            ["SessionEnd", "Session ending"],
+            ["WorktreeCreate", "Git worktree created"],
+            ["WorktreeRemove", "Worktree removed"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "special-files",
+      "title": "Config Files & Locations",
+      "icon": "📁",
+      "tables": [
+        {
+          "title": "File Locations",
+          "columns": ["Path", "Purpose"],
+          "rows": [
+            ["~/.claude/settings.json", "User settings"],
+            ["~/.claude/CLAUDE.md", "User-level instructions"],
+            ["~/.claude/keybindings.json", "Custom keybindings"],
+            ["~/.claude/.mcp.json", "User MCP config"],
+            ["~/.claude/rules/", "User rules"],
+            [".claude/settings.json", "Project settings"],
+            [".claude/settings.local.json", "Local overrides (gitignored)"],
+            [".claude/CLAUDE.md", "Project instructions"],
+            [".claude/rules/", "Project rules"],
+            [".claude/.mcp.json", "Project MCP config"],
+            [".claude/hooks/", "Project hooks"],
+            [".claude/agents/", "Subagent definitions"],
+            [".claude/skills/", "Custom skills"]
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,3 +1,16 @@
+export interface ReferenceTable {
+  title: string;
+  columns: [string, string];
+  rows: [string, string][];
+}
+
+export interface ReferenceSheet {
+  id: string;
+  title: string;
+  icon: string;
+  tables: ReferenceTable[];
+}
+
 export interface Tool {
   slug: string;
   name: string;
@@ -10,6 +23,7 @@ export interface Tool {
   whenToSwap: string;
   learnMore: string;
   level: number;
+  referenceSheets?: ReferenceSheet[];
 }
 
 export type ToolCategory =

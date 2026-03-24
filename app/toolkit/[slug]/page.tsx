@@ -2,6 +2,7 @@ import { getToolBySlug, getAllTools } from "@/lib/tools";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
+import ReferenceSheets from "@/components/ReferenceSheets";
 
 interface PageProps {
   params: { slug: string };
@@ -96,6 +97,14 @@ export default function ToolDetailPage({ params }: PageProps) {
         <h2 className="text-lg font-semibold text-[#e4e6eb] mb-2">When to switch</h2>
         <p className="text-[#8b8e94] leading-relaxed max-w-[65ch]">{tool.whenToSwap}</p>
       </section>
+
+      {/* Reference Sheets */}
+      {tool.referenceSheets && tool.referenceSheets.length > 0 && (
+        <section className="mb-10 animate-fade-in" style={{ animationDelay: "320ms" }}>
+          <h2 className="text-lg font-semibold text-[#e4e6eb] mb-4">Quick Reference</h2>
+          <ReferenceSheets sheets={tool.referenceSheets} />
+        </section>
+      )}
 
       {/* Learn more */}
       <section className="mb-10">
